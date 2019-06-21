@@ -194,7 +194,7 @@ footer {
 }
 
 /* -------------------- CSSはここから追加していきましょう！ -------------------- */
-.fa, .menu-icon {
+.menu-icon {
   color: white;
   float: right;
   font-size: 25px;
