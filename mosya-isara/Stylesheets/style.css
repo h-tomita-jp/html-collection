@@ -93,8 +93,8 @@ code {
     padding-left: 5px;
 }
 
-/*.conversion .tw-btn{ position:relative; width:75px;	height:22px; }*/
-/*.conversion .tw-btn iframe{ position:absolute !important;	top: 2px;	left: 12px; }*/
+.conversion .tw-btn{ position:relative; width:75px;	height:22px; }
+.conversion .tw-btn iframe{ position:absolute !important;	top: 2px;	left: 12px; }
 .conversion .twitter-share-button { margin-right: -8px; }
 
 @media screen and (max-width: 768px) {
