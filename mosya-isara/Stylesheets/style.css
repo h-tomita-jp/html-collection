@@ -217,7 +217,7 @@ code {
 
 /*--teacher--*/
 .teacher { padding: 70px 0; text-align: center; background-image: url(../Images/teacherbg.jpg); background-position: center; background-size: cover; color: #fff; }
-.teacher h2, h3 { line-height: 40px; }
+.teacher h2, h3 { line-height: 40px; letter-spacing: 1.5px; }
 .teacher>p { padding-top: 20px; }
 .teacher .txts { font-size: 16px; font-weight: 600; letter-spacing: 1px;}
 .teacherbox { padding: 0; max-width: 780px; margin: 0 auto; }
