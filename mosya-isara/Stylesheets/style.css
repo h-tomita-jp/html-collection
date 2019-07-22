@@ -280,6 +280,7 @@ code {
 
 @media screen and (max-width: 768px) {
   .classbox { padding: 20px 10px; }
+  .classlist:nth-child(2) { padding-top: 10px; }
 }
 
 /*--classbottom--*/
