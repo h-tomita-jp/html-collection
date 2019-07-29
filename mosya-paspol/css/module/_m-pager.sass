@@ -1,0 +1,31 @@
+.m-pager
+  text-align: center
+
+  .wp-pagenavi
+    padding: 90px 0 10px
+
+  .pages,
+  .extend,
+  .first,
+  .last
+    display: none
+
+  span, a
+    +inlineBlock
+    font-size: 14px
+    width: 36px
+    height: 36px
+    text-align: center
+    line-height: 36px - 2px
+    border: 1px solid $fontColor
+    color: $fontColor
+    margin-left: 5px
+    margin-right: 5px
+
+  a:hover
+    color: $fontColor-inverse
+    background-color: $fontColor
+
+  .current
+    color: #cccfd0
+    border-color: #cccfd0

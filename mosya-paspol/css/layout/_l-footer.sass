@@ -1,0 +1,23 @@
+.l-footer
+  background-color: $bgColor-footer
+  padding: 35px 0
+
+  .l-container
+    +clearFix
+
+  .m-siteLogo
+    float: left
+
+  .m-copyRight
+    float: right
+    margin-top: 35px
+
+
+@media only screen and (max-width: 580px)
+  .l-footer
+    .m-siteLogo
+      float: none
+
+    .m-copyRight
+      float: none
+      margin-top: 25px

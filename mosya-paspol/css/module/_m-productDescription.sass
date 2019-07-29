@@ -1,0 +1,75 @@
+// .m-productDescription
+//   width: 786px
+//   margin: 0 auto
+//   overflow: hidden
+
+.m-productDescription-item
+  margin-top: 120px
+  +clearFix
+  box-sizing: content-box
+  margin-left: -15px
+  margin-right: -15px
+
+.m-productDescription-item-image,
+.m-productDescription-item-text
+  width: 50%
+  padding-right: 15px
+  padding-left: 15px
+
+
+.m-productDescription-item:nth-child(odd)
+  .m-productDescription-item-image
+    float: right
+
+  .m-productDescription-item-text
+    float: left
+
+
+.m-productDescription-item:nth-child(even)
+  .m-productDescription-item-image
+    float: left
+
+  .m-productDescription-item-text
+    float: right
+
+
+.m-productDescription-item-image img
+  width: 100%
+  height: auto
+  vertical-align: top
+
+
+.m-productDescription-item-title
+  margin: 0
+  font-size: 26px
+
+.m-productDescription-item-description
+  margin: 30px 0 0
+  font-size: 16px
+  color: $fontColor-sub
+
+
+@media only screen and (max-width: 700px)
+  .m-productDescription-item
+    margin-top: 60px
+
+  .m-productDescription-item-image,
+  .m-productDescription-item-text
+    float: none !important
+    width: 100%
+
+  .m-productDescription-item-image
+    text-align: center
+
+    img
+      max-width: 100%
+      width: auto
+
+  .m-productDescription-item-title
+    font-size: 22px
+    margin-top: 20px
+    text-align: center
+
+  .m-productDescription-item-description
+    font-size: 14px
+    margin-top: 15px

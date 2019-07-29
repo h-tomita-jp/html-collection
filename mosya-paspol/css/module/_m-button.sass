@@ -1,0 +1,137 @@
+.m-button
+  display: inline-block
+  width: 162px
+  height: 46px
+  line-height: 46px + 2px
+  font-size: 14px
+  color: $fontColor
+  border: 1px solid $fontColor
+  text-align: center
+  font-family: $fontFamily-specific
+  letter-spacing: $letterSpacing-title
+  @extend %animation
+
+  &:hover
+    opacity: 1
+
+
+.m-button--more
+  background: url("../img/button-arrow@2x.png") no-repeat
+  background-size: 8px 12px
+  background-position: 140px 50%
+
+  &:hover
+    background-color: $fontColor
+    color: $fontColor-inverse
+    background-image: url("../img/button-arrow-hover@2x.png")
+
+
+.m-button--facebook
+  color: #4871a9
+  border-color: #4871a9
+
+  &:hover
+    background-color: #4871a9
+    color: $fontColor-inverse
+
+.m-button--twitter
+  color: #70bdd3
+  border-color: #70bdd3
+
+  &:hover
+    background-color: #70bdd3
+    color: $fontColor-inverse
+
+.m-button--hatena
+  color: #2f9bcd
+  border-color: #2f9bcd
+
+  &:hover
+    background-color: #2f9bcd
+    color: $fontColor-inverse
+
+.m-button--line
+  color: #8ec09d
+  border-color: #8ec09d
+
+  &:hover
+    background-color: #8ec09d
+    color: $fontColor-inverse
+
+@media only screen and (max-width: 700px)
+  .m-button--facebook,
+  .m-button--twitter,
+  .m-button--hatena,
+  .m-button--line
+    width: 150px
+    font-size: 13px
+
+@media only screen and (max-width: 580px)
+  .m-button--facebook,
+  .m-button--twitter,
+  .m-button--hatena,
+  .m-button--line
+    width: 100%
+
+.m-button--buy
+  width: 210px
+  color: #fa5f6b
+  border-color: #fa5f6b
+  background: url("../img/button-open-buy@2x.png") no-repeat
+  background-size: 9px 9px
+  background-position: 185px 50%
+
+  &:hover
+    background-color: #fa5f6b
+    color: $fontColor-inverse
+    background-image: url("../img/button-open-buy-hover@2x.png")
+
+
+.m-button--back
+  width: 210px
+  background: url("../img/button-arrow-back@2x.png") no-repeat
+  background-size: 7px 12px
+  background-position: 14px 50%
+
+  &:hover
+    background-color: $fontColor
+    color: $fontColor-inverse
+    background-image: url("../img/button-arrow-back-hover@2x.png")
+
+
+.m-button--newtab
+  width: 220px
+  background: url("../img/button-open@2x.png") no-repeat
+  background-size: 9px 9px
+  background-position: 93% 50%
+
+  &:hover
+    background-color: $fontColor
+    color: $fontColor-inverse
+    background-image: url("../img/button-open-buy-hover@2x.png")
+
+@media only screen and (max-width: 400px)
+  .m-button--newtab
+    width: 100%
+
+
+.m-button--entryPrev
+  background: url("../img/button-arrow-back@2x.png") no-repeat
+  background-size: 7px 12px
+  background-position: 14px 50%
+
+  &:hover
+    background-color: $fontColor
+    color: $fontColor-inverse
+    background-image: url("../img/button-arrow-back-hover@2x.png")
+
+
+.m-button--entryNext
+  background: url("../img/button-arrow@2x.png") no-repeat
+  background-size: 8px 12px
+  background-position: 140px 50%
+
+  &:hover
+    background-color: $fontColor
+    color: $fontColor-inverse
+    background-image: url("../img/button-arrow-hover@2x.png")

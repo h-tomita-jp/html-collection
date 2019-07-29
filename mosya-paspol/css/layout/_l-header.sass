@@ -1,0 +1,35 @@
+.l-header
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  z-index: 1
+  +clearFix
+
+  .m-siteLogo
+    float: left
+    margin-top: 50px
+    margin-left: 7%
+
+  .m-navigation
+    float: right
+    margin-top: 75px
+    margin-right: 7%
+
+  .m-navigationToggle
+    display: none
+
+.key_visual_url
+  display: none
+
+@media only screen and (max-width: 900px)
+  .l-header
+    .m-siteLogo
+      display: none
+
+    .m-navigation
+      float: none
+      margin: 0
+
+    .m-navigationToggle
+      display: block

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- flexslider CSS -->
+    <link rel="stylesheet" href="flexslider.css" type="text/css">
+
+    <!-- jQuery -->
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+    <!-- flexslider lib -->
+    <script src="jquery.flexslider.js"></script>
+
+    <!-- flexslider script -->
+    <script type="text/javascript" charset="utf-8">  
+
+      $(window).load(function() {
+      // $(window).on('load', function() {
+            console.log('hello');
+            $(".flexslider").flexslider({
+              slideshowSpeed: 1000,
+              // animation: "fade",
+              controlNav: false,
+              // directionNav: false,
+              pauseOnHover: false,
+              pauseOnAction: false,
+              // direction: "horizontal",
+              // reverse: false,
+              // animationSpeed: 1500,
+              // prevText: "&lt;",
+              // nextText: "&gt;",
+              slideshow: true ,
+
+            });
+      });
+    </script>
+
+    <title>flexslider sample</title>    
+
+  </head>
+
+  <body>
+
+    <div class="flexslider">
+      <ul class="slides">
+        <li><img src="img/main_visual_13-0x0.jpg"></li>
+        <li><img src="img/main_visual_2-0x0.jpg"></li>
+        <li><img src="img/main_visual_6-0x0.jpg"></li>
+        <li><img src="img/main_visual_7-0x0.jpg"></li>
+        <li><img src="img/main_visual_111-0x0.jpg"></li>
+      </ul>
+    </div>
+
+  </body>
+</html>

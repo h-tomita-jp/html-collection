@@ -1,0 +1,78 @@
+// .m-productList
+
+.m-productList-item
+  margin-top: 60px
+
+.m-productList-item-link
+  display: block
+
+.m-productList-item-image
+  img
+    width: 100%
+    height: auto
+    vertical-align: top
+
+.m-productList-item-title
+  margin: 20px 0 0
+  padding: 0 20px
+  font-size: 20px
+
+.m-productList-item-description
+  margin: 10px 0 0
+  padding: 0 20px
+  font-size: 14px
+  color: $fontColor-sub
+
+.m-productList-more
+  display: none
+
+
+@media only screen and (max-width: 780px)
+  .m-productList-item
+    width: 100%
+    margin-top: 30px
+    padding: 0 !important
+
+  .m-productList-item-link
+    +clearFix
+
+  .m-productList-item-image
+    float: left
+    width: 32%
+
+  .m-productList-item-title
+    padding-left: 36%
+    padding-right: 0
+    margin-top: 0
+    padding-top: 20px
+
+  .m-productList-item-description
+    padding-left: 36%
+    padding-right: 0
+
+
+@media only screen and (max-width: 500px)
+  .m-productList
+    margin-top: -10px
+
+  .m-productList-item
+    margin-top: 30px
+
+  .m-productList-item-image
+    float: none
+    width: 100%
+
+  .m-productList-item-title
+    margin: 0
+    padding: 0 10%
+    font-size: 18px
+
+  .m-productList-item-description
+    margin: 10px 0 0
+    padding: 0 10%
+    font-size: 12px
+
+  .m-productList-more
+    display: block
+    text-align: center
+    margin-top: 50px

@@ -1,0 +1,96 @@
+.m-navigation
+  ul
+    margin: 0
+    padding: 0
+    list-style-type: none
+    +inlineBlockParent
+
+  li
+    +inlineBlock
+    margin-left: 40px
+
+    &:first-child
+      margin-left: 0
+
+    a
+      color: $fontColor-inverse
+      font-size: 14px
+      font-family: $fontFamily-specific
+      letter-spacing: $letterSpacing-title
+      padding-bottom: 8px
+      border-bottom: 2px solid transparent
+
+      &:hover
+        border-color: $fontColor-inverse
+        opacity: 1
+
+
+.m-navigation--center
+  ul
+    text-align: center
+
+  li
+    a
+      padding: 0
+      border: none
+
+      &:hover
+        opacity: 0.7
+
+
+@media only screen and (max-width: 900px)
+  .m-navigation:not(.m-navigation--center)
+    background-color: rgba(#000, 0.7)
+    overflow: hidden
+    // height: 0
+
+    li
+      display: block
+      margin: 0
+      border-top: 1px solid #fff
+
+      &:first-child
+        border-top: none
+
+      a
+        display: block
+        padding: 1.2em 7% 1em 7%
+        border-bottom: none
+
+
+@media only screen and (max-width: 580px)
+  .m-navigation--center
+    li
+      display: block
+      margin: 0
+      border-top: 1px solid #fff
+
+      &:first-child
+        border-top: none
+
+      a
+        display: block
+        padding: 1.2em 7% 1em 7%
+
+
+.js-navigation
+  @extend %animation
+  transition-duration: 600ms
+  transition-timing-function: $easeInOutCubic
+  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1)
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1)
+
+
+@media only screen and (max-width: 900px)
+  .js-navigation
+    pointer-events: touch
+    -webkit-transform: translateY(-100%)
+    -ms-transform: translateY(-100%)
+    transform: translateY(-100%)
+    margin-top: 45px !important
+
+.is-open
+  margin-top: 0 !important
+  -webkit-transform: translateY(0)
+  -ms-transform: translateY(0)
+  transform: translateY(0)

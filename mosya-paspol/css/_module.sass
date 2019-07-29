@@ -1,0 +1,22 @@
+// PC & SP
+.sp
+  display: none
+
+// SmartPhone
++mediaquery-tablet-small
+  .pc
+    display: none
+
+  .sp
+    display: block
+
+
+// Margin (step1 ~ step10)
+@for $i from 1 through 10
+  // margin-top
+  .mt-step#{$i}
+    margin-top: $i * 5 + px
+
+  // margin-bottom
+  .mb-step#{$i}
+    margin-bottom: $i * 5 + px
