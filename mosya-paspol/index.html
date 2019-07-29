@@ -13,7 +13,6 @@
 
     <!-- flexslider CSS -->
     <link rel="stylesheet" href="css/flexslider.css" type="text/css">
-    <link rel="stylesheet" href="css/metaslider.css" type="text/css">
 
     <!-- Original CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -42,34 +41,26 @@
     </header>
     <!-- Main Visual -->
     <div class="l-mainVisual">
-      <!-- Index -->
-      <div class="m-mainVisual js-mainVisual" style="height: 1170px;">
-        <div class="m-mainVisual-image js-mainVisual-image" style="opacity: 1;">
-        <!-- meta slider -->
-        <div style="width: 1699px; height: 900px; top: 0px; left: -250px;" class="metaslider metaslider-flex metaslider-19 ml-slider nav-hidden">
-        <!--<div style="width: 100%; height: 900px; " class="ml-slider nav-hidden">-->
-            <div id="metaslider_container_19">
-                <div class="flexslider">
-                    <ul class="slides">
-                        <li><img src="img/main_visual_13-0x0.jpg"  ></li>
-                        <li><img src="img/main_visual_2-0x0.jpg"   ></li>
-                        <li><img src="img/main_visual_6-0x0.jpg"   ></li>
-                        <li><img src="img/main_visual_7-0x0.jpg"   ></li>
-                        <li><img src="img/main_visual_111-0x0.jpg" ></li>
-                    </ul>
-                </div>
-            </div>
+      <div class="m-mainVisual js-mainVisual">
+        <div class="m-mainVisual-image js-mainVisual-image" style="position: relative; z-index: 0;">
+          <div class="flexslider" style="width: 100%; border: none;">
+            <ul class="slides">
+              <li><img src="img/main_visual_13-0x0.jpg"></li>
+              <li><img src="img/main_visual_2-0x0.jpg"></li>
+              <li><img src="img/main_visual_6-0x0.jpg"></li>
+              <li><img src="img/main_visual_7-0x0.jpg"></li>
+              <li><img src="img/main_visual_111-0x0.jpg"></li>
+            </ul>
+          </div>
         </div>
-        <!--// meta slider-->      </div>
-
-      <div class="m-mainVisual-logo">PAS-POL -旅のモノづくりブランド-｜TABIPPO</div>
-      <div class="m-mainVisual-arrow"></div>
-
-      <!-- overlay -->
-      <div class="m-mainVisual-overlay"></div>
+  
+        <div class="m-mainVisual-logo">PAS-POL -旅のモノづくりブランド-｜TABIPPO</div>
+        <div class="m-mainVisual-arrow"></div>
+  
+        <!-- overlay -->
+        <div class="m-mainVisual-overlay"></div>
+      </div>
     </div>
-
-  </div>
     <!-- Concept -->
     <section class="l-section l-section--concept">
       <div class="l-container l-container--narrow">
@@ -328,17 +319,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <!-- flexslider -->
+    <!-- flexslider JavaScript -->
     <script src="js/jquery.flexslider.js"></script>
-    <script type="text/javascript" charset="utf-8">
-      $(window).load(function() {
-        $('.flexslider').flexslider();
-      });
-    </script>
-        
 
     <!-- Original JavaScript -->
-    <!--<script type="text/javascript" src="js/lib.js"></script>-->
     <script type="text/javascript" src="js/script.js"></script>
 
   </body>
