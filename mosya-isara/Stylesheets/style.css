@@ -315,6 +315,12 @@ code {
   border-radius: 4px;
 }
 
+@media only screen and (max-width: 1190px) and (min-width: 768px) {
+  .conversionbtn {
+    padding: 25px 50px;
+    margin: 10px 80px;
+  }
+}
 @media screen and (max-width: 768px) {
   .brsp {
     display: block;
@@ -1664,6 +1670,18 @@ form#OF_form1 textarea {
 
 .fa-chevron-up {
   font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .pagetop {
+    bottom: 20px;
+    right: 10px;
+    padding: 15px;
+  }
+
+  .fa-chevron-up {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
