@@ -90,3 +90,8 @@ input, textarea {
 .footer-list li {
   padding-bottom: 20px;
 }
+
+
+.contents-item:nth-child(2) p {
+  background-color: red;
+}
