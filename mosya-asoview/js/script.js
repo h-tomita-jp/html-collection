@@ -19,19 +19,20 @@
 //   });
 // });
 
-// $(function() {
-//   //tab
-//   $('ul.tab li').click(function() {
-//     var index = $('ul.tab li').index(this);
-//     $('.tab_content').css('display','none');
-//     $('.tab_content').eq(index).css('display','block');
-//     $('ul.tab li').removeClass('select');
-//     $('ul.tab li').addClass('not');
-//     $(this).addClass('select').removeClass('not');
-//   });
-//   //高さ揃え
-//   $('.plan_set a .text').matchHeight();
-// });
+$(function() {
+  //tab
+  $('ul.tab li').click(function() {
+    var index = $('ul.tab li').index(this);
+    if(index > 1){index -= 2;}
+    $('.tab_content').css('display','none');
+    $('.tab_content').eq(index).css('display','block');
+    $('ul.tab li').removeClass('select');
+    $('ul.tab li').addClass('not');
+    $(this).addClass('select').removeClass('not');
+  });
+  //高さ揃え
+  $('.plan_set a .text').matchHeight();
+});
 
 // function option_change(){
 //   var link = document.sel2_form.sel2.value;
