@@ -1,1 +1,0 @@
-/home/ec2-user/environment/dart-sass/sass style.sass:style.css
