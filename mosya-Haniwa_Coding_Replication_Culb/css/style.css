@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+	padding: 0;
+}
+
+header {
+  height: 70px;
+  background-color: #2a7eb1;
+}
+
+header .logo {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 94px;
+  float: left;
+}
+
+header .logo:hover {
+  transform: translateY(-60%);
+}
+
+header .nav-menu {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 92px;
+  float: right;
+}
+
+header .nav-menu a{
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: "Yu Gothic";
+  padding-left: 28px;
+}
+
+header .nav-menu a:hover {
+  transform: translateY(-5px);
+}
+
+.mv img{
+  width: 100%;
+}
+
+.headline h2{
+  font-size: 36px;
+  color: #3c3c3c;
+  font-family: "Yu Gothic";
+  font-weight: bold;
+	margin-left: 92px;
+	margin-top: 42px;
+	padding-left: 26px;
+	position: relative;
+}
+
+.headline h2:before {
+  content: "";
+  width: 6px;
+  height: 26px;
+  background-color: #2a7eb1;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 135px;
+}
+
+.card {
+  width: 360px;
+  height: 360px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(17, 51, 72, 0.2);
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.card:hover {
+  opacity: 0.6;
+  transform: translateY(-5px);
+}
+
+.card img {
+  margin: 20px;
+  width: 320px;
+}
+
+.card p {
+  margin: 0 20px;
+  width: 320px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3c3c3c;
+  font-family: "Yu Gothic";
+}
+
+footer {
+  height: 64px;
+  background-color: #b3b3b3;
+}
+
+footer p {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 24px;
+  color: #3c3c3c;
+  font-family: "Yu Gothic";
+	padding: 24px 8px 22px;
+  text-align: center;
+}
