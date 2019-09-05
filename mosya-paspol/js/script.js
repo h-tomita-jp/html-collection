@@ -35,16 +35,16 @@ $(window).on("load", function() {
 // image Resize
 $(window).on("load resize", function() {
     if ($(window).width() > 900) {
-        $(".js-mainVisual").css({ height: $(window).height() - 30 });
+        $(".js-mainVisual-container").css({ height: $(window).height() - 30 });
     }
     else {
-        $(".js-mainVisual").css({ height: $(window).height() + 20 });
+        $(".js-mainVisual-container").css({ height: $(window).height() + 20 });
     }
 
     outerWidth = $(".js-mainVisual").width();
     outerHeight = $(".js-mainVisual").height();
-    innerWidth = $(".flexslider").width();
-    innerHeight = $(".flexslider").height();
+    innerWidth = ( $(".flexslider").width() > 0 ) ? $(".flexslider").width() : $(".m-mainVisual-image>img").width();;
+    innerHeight = ( $(".flexslider").height() > 0 ) ? $(".flexslider").height() : $(".m-mainVisual-image>img").height();;
     widthRatio = outerWidth / innerWidth;
     heightRatio = outerHeight / innerHeight;
     maxRatio = Math.max(widthRatio, heightRatio);
@@ -53,5 +53,6 @@ $(window).on("load resize", function() {
     topMargin = Math.floor((zoomedHeight - outerHeight) / -2);
     leftMargin = Math.floor((zoomedWidth - outerWidth) / -2);
     $(".flexslider").css({ width: zoomedWidth, height: zoomedHeight, top: topMargin, left: leftMargin });
+    $(".m-mainVisual-image>img").css({ width: zoomedWidth, height: zoomedHeight, top: topMargin, left: leftMargin });
 
 });
