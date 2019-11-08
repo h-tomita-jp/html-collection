@@ -1,54 +1,167 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>h-tomita-jp.github.io/html-collection</title>
-  </head>
-  <body>
-    <div>
-			<p>模写したウェブページとソースコードをご確認いただけます。</p>
-      <ul class="works-list">
-        <li>
-          <p class="works-title">【模写制作】サツドラ（サッポロドラッグストアー）</p>
-					<p>模写元：<a href="https://satudora.jp/" target="_blank">サツドラ（サッポロドラッグストアー）</a></p>
-					<p>動作確認：<a href="http://htomitajp.xyz/wp_satudora/" target="_blank">【模写】サツドラ（サッポロドラッグストアー） </a></p>
-					<p>ソースコード(1)：<a href="https://github.com/h-tomita-jp/wordpress_theme_satudora" target="_blank">WordPress独自テーマを自作</a></p>
-					<p>ソースコード(2)：<a href="https://github.com/h-tomita-jp/wordpress_satudora_service" target="_blank">WordPressルートフォルダ直下にserviceフォルダを作成</a></p>
-					<p>所要時間約２０日。模写元は明らかにWordPressにて制作されていますので、構成を類推して独自テーマ＆カスタムフィールド＆カスタム投稿を作成しました。</p>
-					<p>ニュース・コラム投稿は勿論、新規サービス・キャンペーン、新規店舗情報追加も全てダッシュボードから投稿/変更できるようにしてみました。</p>
-					<p>問い合わせ・メルマガ登録画面も作成し、表面的な模写ではなくWordPressの様々なテクニックを駆使しています。</p>
-        </li>
-        <li>
-          <p class="works-title">【模写制作】PAS-POL -旅のモノづくりブランド-｜TABIPPO</p>
-					<p>模写元：<a href="https://pas-pol.jp/" target="_blank">PAS-POL -旅のモノづくりブランド-｜TABIPPO</a></p>
-					<p>動作確認：<a href="http://htomitajp.starfree.jp/wp/" target="_blank">【模写】PAS-POL -旅のモノづくりブランド-｜TABIPPO</a></p>
-					<p>ソースコード：<a href="https://github.com/h-tomita-jp/wordpress_theme_paspol" target="_blank">WordPress独自テーマを自作</a></p>
-					<p>所要時間約８日。模写元は明らかにWordPressにて制作されていますので、構成を類推して独自テーマ＆カスタムフィールド＆カスタム投稿を作成しました。</p>
-					<p>トップページ＝フロントページのスライドも含め、メインビジュアル等の画像も全てダッシュボードから投稿/変更できるようにしてみました。</p>
-        </li>
-        <li>
-          <p class="works-title">【模写制作】スポーツツーリズムを楽しもう！｜asoview!</p>
-					<p>模写元：<a href="https://www.asoview.com/brand/sports-tourism/" target="_blank">スポーツツーリズムを楽しもう！｜asoview!</a></p>
-					<p>動作確認：<a href="mosya-asoview/" target="_blank">【模写】スポーツツーリズムを楽しもう！｜asoview!</a></p>
-					<p>ソースコード：<a href="https://github.com/h-tomita-jp/html-collection/tree/master/mosya-asoview" target="_blank">【模写】asoview!ソースコード</a></p>
-					<p>所要時間約５日。冒頭の文字表示部分は本来やりたかったと思われるアニメーションにしています。</p>
-					<p>また、CSSアニメーションをできるだけ多用しJavaScriptをシンプル＆軽量化しました。</p>
-        </li>
-        <li>
-          <p class="works-title">【模写制作】iSara[イサラ]｜バンコクのノマドエンジニア育成講座</p>
-					<p>模写元：<a href="https://isara.life/" target="_blank">iSara[イサラ]｜バンコクのノマドエンジニア育成講座</a></p>
-					<p>動作確認：<a href="mosya-isara/" target="_blank">【模写】iSara[イサラ]｜バンコクのノマドエンジニア育成講座</a></p>
-					<p>ソースコード：<a href="https://github.com/h-tomita-jp/html-collection/tree/master/mosya-isara" target="_blank">【模写】iSaraソースコード</a></p>
-					<p>所要時間約４日。オリジナルと異なるBootstrapバージョン(Ver.4)を使って書いてみました。</p>
-        </li>
-        <li>
-          <p class="works-title">【模写制作】コーディング模写会</p>
-					<p>模写元：<a href="https://note.mu/haniwaman/n/nefa48db83682" target="_blank">Photoshop、Illustrator、XDからのコーディングに慣れよう！</a></p>
-					<p>動作確認：<a href="mosya-Haniwa_Coding_Replication_Culb//" target="_blank">【模写】コーディング模写会</a></p>
-					<p>ソースコード：<a href="https://github.com/h-tomita-jp/html-collection/tree/master/mosya-Haniwa_Coding_Replication_Culb/" target="_blank">【模写】コーディング模写会ソースコード</a></p>
-					<p>所要時間約１日。デザインカンプ(psd, ai, xdファイル)を元に制作する練習。上記の有料noteを購入しました。</p>
-        </li>
-      </ul>
-    </div>
-  </body>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+  <title>Hideo Tomita Portfolio Website</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <!-- for slick plugin -->
+  <link rel="stylesheet" href="slick/slick.css" />
+  <link rel="stylesheet" href="slick/slick-theme.css" />
+</head>
+
+<body>
+  <div id="preloader" class="preloader">
+    <p class="preloader-text">Hideo Tomita<br>Portfolio Website</p>
+  </div>
+  <div id="main-wrapper" class="main-wrapper">
+    <header>
+      <h1 class="site-title">Hideo Tomita Portfolio Website</h1>
+      <p class="catchcopy">ホームページ制作、WordPress案件お任せください。</p>
+    </header>
+    <section class="introduction fadein">
+      <div class="section-inner">
+        <h2 class="heading">こんなご要望にお応えします！</h2>
+        <ul class="intro-list">
+          <li>安価にホームページを開設したい</li>
+          <li>安価にWebサイトをWordPress化したい</li>
+          <li>コーダーの人手不足を補って欲しい</li>
+        </ul>
+        <br>
+        <div class="intro-text">
+          <p>クラウドソーシング経由の直発注、制作会社様の外注のいずれも承っております。</p>
+          <p>丁寧な仕様確認と綺麗なコーディングを心がけております。</p>
+        </div>
+      </div>
+    </section>
+    <!-- profile -->
+    <section class="profile bgcolor fadein">
+      <div class="section-inner">
+        <h2 class="heading">Profile</h2>
+        <p class="subtitle">プロフィール</p>
+        <div class="profile-container">
+          <img class="profile-photo" src="images/profile_org.jpg" alt="profile-photo">
+          <div class="profile-text">
+            <p class="notes">Webエンジニア</p>
+            <h3 class="profile-name">富田 英夫 / Tomita Hideo</h3>
+            <p class="notes">神奈川県横浜市在住</p>
+            <p>ご覧頂きありがとうございます。<br>横浜市を拠点に活動しているフリーランスのWebエンジニアです。</p>
+            <p>長年システムエンジニアとして大企業向けシステムの開発・運用を行ってきました。現在はフリーランスとしてホームページ制作を行なっております。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service -->
+    <section class="service fadein">
+      <div class="section-inner">
+        <h2 class="heading">Service</h2>
+        <p class="subtitle">お任せください</p>
+        <div class="service-container">
+          <div class="service-box">
+            <img class="service-photo" src="images/service-coding.jpg" alt="service-coding">
+            <div class="service-text">
+              <h3 class="service-title"><i class="fas fa-code"></i> コーディング</h3>
+              <p>ホームページ、ランディングページのコーディング、お任せください。</p>
+              <ul class="service-list">
+                <li>HTML/CSSコーディング（レスポンシブ対応）</li>
+                <li>JavaScript(又はjQuery)でのアニメーション設定</li>
+                <li>Bootstrapを使用したコーディング</li>
+              </ul>
+            </div>
+          </div>
+          <div class="service-box">
+            <img class="service-photo" src="images/service-wordpress.jpg" alt="service-customize">
+            <div class="service-text">
+              <h3 class="service-title"><i class="fab fa-wordpress"></i>ホームページ、ランディングページのWordPress化</h3>
+              <p>以下を含むWordPress化関連作業、お任せください。</p>
+              <ul class="service-list">
+                <li>独自テーマ作成</li>
+                <li>プラグイン設定</li>
+                <li>お問い合わせフォーム設置</li>
+                <li>カスタム投稿の設置</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- works -->
+    <section class="works bgcolor fadein">
+      <div class="section-inner">
+        <h2 class="heading">Works</h2>
+        <p class="subtitle">ポートフォリオ</p>
+        <div class="works-container">
+          <p>※すべて模写制作した成果物です。</p>
+          <ul class="works-slider">
+            <li><img src="images/screen-shot-01.png"></li>
+            <li><img src="images/screen-shot-02.png"></li>
+            <li><img src="images/screen-shot-03.png"></li>
+            <li><img src="images/screen-shot-04.png"></li>
+          </ul>
+          <hr class="works-border">
+          <div class="works-additional">
+            <p>模写したウェブページとソースコードをご確認いただけます。</p>
+            <ul class="works-list">
+              <li>
+                <p class="works-title">【模写制作】サツドラ（サッポロドラッグストアー）</p>
+                <p>模写元：<a href="https://satudora.jp/" target="_blank">サツドラ（サッポロドラッグストアー）</a></p>
+                <p>動作確認：<a href="http://htomitajp.xyz/wp_satudora/" target="_blank">【模写】サツドラ（サッポロドラッグストアー） </a></p>
+                <p>ソースコード(1)：<a href="https://github.com/h-tomita-jp/wordpress_theme_satudora" target="_blank">WordPress独自テーマを自作</a></p>
+                <p>ソースコード(2)：<a href="https://github.com/h-tomita-jp/wordpress_satudora_service" target="_blank">WordPressルートフォルダ直下にserviceフォルダを作成</a></p>
+                <p>所要時間約２０日。模写元は明らかにWordPressにて制作されていますので、構成を類推して独自テーマ＆カスタムフィールド＆カスタム投稿を作成しました。</p>
+                <p>ニュース・コラム投稿は勿論、新規サービス・キャンペーン、新規店舗情報追加も全てダッシュボードから投稿/変更できるようにしてみました。</p>
+                <p>問い合わせ・メルマガ登録画面も作成し、表面的な模写ではなくWordPressの様々なテクニックを駆使しています。</p>
+              </li>
+              <li>
+                <p class="works-title">【模写制作】PAS-POL -旅のモノづくりブランド-｜TABIPPO</p>
+                <p>模写元：<a href="https://pas-pol.jp/" target="_blank">PAS-POL -旅のモノづくりブランド-｜TABIPPO</a></p>
+                <p>動作確認：<a href="http://htomitajp.starfree.jp/wp/" target="_blank">【模写】PAS-POL -旅のモノづくりブランド-｜TABIPPO</a></p>
+                <p>ソースコード：<a href="https://github.com/h-tomita-jp/wordpress_theme_paspol" target="_blank">WordPress独自テーマを自作</a></p>
+                <p>所要時間約８日。模写元は明らかにWordPressにて制作されていますので、構成を類推して独自テーマ＆カスタムフィールド＆カスタム投稿を作成しました。</p>
+                <p>トップページ＝フロントページのスライドも含め、メインビジュアル等の画像も全てダッシュボードから投稿/変更できるようにしてみました。</p>
+              </li>
+              <li>
+                <p class="works-title">【模写制作】スポーツツーリズムを楽しもう！｜asoview!</p>
+                <p>模写元：<a href="https://www.asoview.com/brand/sports-tourism/" target="_blank">スポーツツーリズムを楽しもう！｜asoview!</a></p>
+                <p>動作確認：<a href="mosya-asoview/" target="_blank">【模写】スポーツツーリズムを楽しもう！｜asoview!</a></p>
+                <p>ソースコード：<a href="https://github.com/h-tomita-jp/html-collection/tree/master/mosya-asoview" target="_blank">【模写】asoview!ソースコード</a></p>
+                <p>所要時間約５日。冒頭の文字表示部分は本来やりたかったと思われるアニメーションにしています。</p>
+                <p>また、CSSアニメーションをできるだけ多用しJavaScriptをシンプル＆軽量化しました。</p>
+              </li>
+              <li>
+                <p class="works-title">【模写制作】iSara[イサラ]｜バンコクのノマドエンジニア育成講座</p>
+                <p>模写元：<a href="https://isara.life/" target="_blank">iSara[イサラ]｜バンコクのノマドエンジニア育成講座</a></p>
+                <p>動作確認：<a href="mosya-isara/" target="_blank">【模写】iSara[イサラ]｜バンコクのノマドエンジニア育成講座</a></p>
+                <p>ソースコード：<a href="https://github.com/h-tomita-jp/html-collection/tree/master/mosya-isara" target="_blank">【模写】iSaraソースコード</a></p>
+                <p>所要時間約４日。オリジナルと異なるBootstrapバージョン(Ver.4)を使って書いてみました。</p>
+              </li>
+              <li>
+                <p class="works-title">【模写制作】コーディング模写会</p>
+                <p>模写元：<a href="https://note.mu/haniwaman/n/nefa48db83682" target="_blank">Photoshop、Illustrator、XDからのコーディングに慣れよう！</a></p>
+                <p>動作確認：<a href="mosya-Haniwa_Coding_Replication_Culb//" target="_blank">【模写】コーディング模写会</a></p>
+                <p>ソースコード：<a href="https://github.com/h-tomita-jp/html-collection/tree/master/mosya-Haniwa_Coding_Replication_Culb/" target="_blank">【模写】コーディング模写会ソースコード</a></p>
+                <p>所要時間約１日。デザインカンプ(psd, ai, xdファイル)を元に制作する練習。上記の有料noteを購入しました。</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <small class="copyright">Copyright © Tomita Hideo All Rights Reserved.</small>
+    </footer>
+  </div>
+  <!-- load javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

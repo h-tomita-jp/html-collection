@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@media (max-width: 768px) {
+
+  .br-pc {
+    display: none;
+  }
+  .br-sp {
+    display: block;
+  }
+
+  /*
+ * profile
+ */
+  .profile-container {
+    flex-direction: column;
+  }
+  .profile-photo {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .profile-text {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  /*
+ * service
+ */
+  .service-box {
+    flex-direction: column;
+  }
+  .service-photo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .service-text {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  /*
+ * works
+ */
+  .works-button {
+    width: 100%;
+  }
+
+
+}
