@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+/* common */
+
+body {
+  margin: 0;
+}
+
+/* heading */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+}
+
+.title {
+  width: 1000px;
+  max-width: calc(100% - 20px);
+  margin: 0 auto;
+  position: relative;
+  height: 70px;
+}
+
+.title .logo {
+  display: inline-block;
+}
+
+.logo img {
+  /*padding-top: 10px;*/
+  width: 144px;
+}
+
+.logo2 {
+  margin-left: 40px;
+}
+
+.logo2 img {
+  width: 216px;
+  padding-bottom: 10px;
+}
+
+.headcontact {
+  margin-top: -12px;
+  position: absolute;
+  right: 0px;
+  top: 15px;
+  /*padding: 11px 40px;*/
+  height: 70px;
+}
+
+/* sidebar */
+
+.sidebar img {
+  position: fixed;
+  z-index: 10;
+  top: 200px;
+  right: 0;
+  width: 5%;
+}
+
+/*--main-- */
+
+.main {
+  padding-top: 60px;
+}
+
+.main .mainvisual {
+  position: relative;
+}
+
+.main .mainvisual .cover-img {
+  width: 100%;
+  height: auto;
+}
+
+.mainvisual .download {
+  position: absolute;
+  top: 69%;
+  left: 16%;
+  width: 35%;
+}
+
+/*--news-- */
+
+.news {
+  position: relative;
+  top: -40px;
+  margin: 0 13%;
+  padding: 1em 1em;
+  font-weight: bold;
+  background: #FFF;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px gray;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.news .left {
+  display: inline-block;
+  width: 15%;
+  text-align: center;
+  line-height: 2.5em;
+  color: #0E7047;
+}
+
+.news .right {
+  display: inline-block;
+  width: 80%;
+  font-size: 70%;
+  letter-spacing: 0em;
+  line-height: 2em;
+}
+
+/*--main2-- */
+
+.main2 .mainvisual .cover-img {
+  width: 70%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*--main3-- */
+
+.main3 {
+  margin-top: 30px;
+}
+
+.main3 .mainvisual .cover-img {
+  width: 100%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*--faq-- */
+
+.faq {
+  margin-top: 30px;
+}
+
+.faq .mainvisual .cover-img {
+  width: 70%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.maintable {
+  width: 80%;
+  table-layout: fixed;
+}
+
+.maintable td {
+  vertical-align: top;
+}
+
+.qa {
+  vertical-align: top;
+}
+
+.qa th {
+  text-align: left;
+  width: 100%;
+  padding: 0.5em 1em;
+}
+
+.qa td {
+  font-size: 0.7em;
+  vertical-align: top;
+  height: 250px;
+  padding: 1em;
+}
+
+.qa.under td {
+  height: 150px;
+}
+
+.qa th:first-letter,
+.qa td:first-letter {
+  color: red;
+}
+
+.qawrap {
+  width: 99%;
+  height: 100%;
+  border-color: #EEEEEE;
+  border-style: groove;
+}
+
+
+
+/*--footer-- */
+
+.footerwrap {
+  position: relative;
+  padding: 10px 15px 10px 15px;
+  background-color: #ececec;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 10px;
+  font-weight: 300;
+}
+
+/*--price-- */
+
+.price {
+  margin-top: 30px;
+}
+
+.price .mainvisual .cover-img {
+  width: 70%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*--step-- */
+
+.step {
+  margin-top: 30px;
+}
+
+.step .mainvisual .cover-img {
+  width: 70%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+/*--contact-- */
+
+.contact {
+  margin-top: 30px;
+}
+
+.contact .mainvisual .cover-img {
+  width: 70%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+}
+
+.contact .form {
+  width: 70%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+.contact .subvisual .cover-img {
+  width: 70%;
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+/*--about-- */
+.about {
+  margin-top: 30px;
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  display: inline-block;
+  padding: 0 320px;
+}
+
+h2:before,
+h2:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 300px;
+  height: 2px;
+  background-color: green;
+}
+
+h2:before {
+  left: 0;
+}
+
+h2:after {
+  right: 0;
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+  display: table;
+}
+
+#table{
+  display: table-cell;
+  vertical-align: top;
+  width: 49%;
+  margin: 0;
+  padding: 0;
+}
+
+#about{
+  margin: 0 0 0 auto;
+}
+
+
+#table table,
+#table td,
+#table th {
+  border-collapse: collapse;
+  border: 2px solid #F2F2F2;
+}
+
+#about th {
+  text-align: left;
+  background-color: #F9F9F9;
+  padding: 0 10px;
+}
+
+#about td {
+  text-align: center;
+  padding: 10px 10px;
+}
+
+#map{
+  display: table-cell;
+  height: 300px;
+  padding: 0 10px;
+}
+
+/*--footer-- */
+footer{
+  margin-top: 30px;
+}
