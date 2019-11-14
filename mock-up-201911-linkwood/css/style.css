@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+/* common */
+
+body, html {
+  margin: 0;
+  font-family: serif;
+}
+
+/*--main-- */
+
+.main .mainvisual {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.main .mainvisual .cover-img {
+  width: 100%;
+  height: auto;
+}
+
+/*--banner-- */
+
+.banner {
+  margin-top: 30px;
+}
+
+.banner .mainvisual {
+  width: 60%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.banner .mainvisual img {
+  width: 100%;
+  height: auto;
+}
+
+.banner .mainvisual img {
+  width: 100%;
+}
+
+/*--concept-- */
+
+.concept {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.concept h1 {
+  color: #6697A9;
+  font-size: medium;
+}
+
+.concept p {
+  font-size: 0.6em;
+}
+
+/*--product-- */
+
+.product {
+  width: 65%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.product h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #6697A9;
+  font-size: medium;
+}
+
+.product-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.product-item {
+  margin-left: 40px;
+  width: 250px;
+  text-align: left;
+}
+
+.product-item h3 {
+  font-size: 1.0em;
+  margin-bottom: 0px;
+}
+
+.product-item p {
+  font-size: 0.7em;
+  margin-top: 0;
+}
+
+/*--image-- */
+
+.image {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin: 50px auto;
+}
+
+.image-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.image-item {
+  width: 250px;
+  height: 160px;
+}
+
+.image-item img{
+  width: 100%;
+  height: 100%;
+}
+
+/*--sns-- */
+
+.sns {
+  width: 65%;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sns-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.sns-item {
+  margin: 0 40px;
+  width: 250px;
+  text-align: left;
+}
+
+/*--about-- */
+
+.about{
+  margin-top: 50px;
+}
+
+.corpname {
+	color: #444;
+	font-size: 16px;
+	display: flex;
+	align-items: center;
+}
+.corpname:before, .corpname:after {
+	content: "";
+	flex-grow: 1;
+	height: 1px;
+	background: #DCDCDC;
+	display: block;
+}
+.corpname:before {
+	margin-right: 2em;
+}
+.corpname:after {
+	margin-left: 2em;
+}
+
+.boxwrap {
+  width: 65%;
+  max-width: 700px;
+  height: auto;
+  margin: 40px auto;
+}
+
+.about-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.about-item {
+  margin: 0 40px;
+  width: 250px;
+  text-align: left;
+  font-size: 0.7em;
+}
+
+.contact {
+  padding: 0.5em 5em;
+  margin: auto;
+  border: solid 1px #DCDCDC;
+  font-size: 0.7em;
+}
+
+.contact p {
+    margin: 0; 
+    padding: 0;
+}
+
+/*--footer-- */
+
+footer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.footerwrap {
+  position: relative;
+  text-align: center;
+  font-size: 0.7em;
+}
