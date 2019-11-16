@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+img {
+    vertical-align: bottom;
+}
+#slider {
+    width: 996px;
+}
+#photo {
+    width: 747px;
+    height: 270px;
+    float: left;
+    position: relative;
+}
+#photo li {
+    position: absolute;
+}
+#thum {
+    width: 229px;
+    float: right;
+    margin-left: 20px
+}
+#thum li {
+    cursor: pointer;
+    background: #FF0004;
+    display: inline-block;
+    float: left;
+    clear: left;
+    height: 50px;
+    width: 249px;
+    margin: 12px 0px
+}
+#thum li a {
+    color: #FFFFFF!important;
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+/* 【追加】hover classで背景色を変える */
+#thum .hover {
+    background: #000;
+}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script> 
+<script type="text/javascript">
+$(function(){
+	var slidSpd = 300;		//フェードの速度
+	var slidTimer = 4000;	//スライドの間隔
+	var count = 0;			//count番目の画像が表示される（0から数える）
+
+	//画像の枚数を調べて<li>にidを付加
+	var qua = $("#photo li").length;
+	for(i=0; i<qua; i++) {
+      //メイン画像のリストにidを付与
+		$("#photo li:eq("+i+")").attr("id", "list"+ i);
+      //サムネイル画像のリストにidを付与
+      $("#thum li:eq("+i+")").attr("id", "btn"+ i);
+	}
+
+	//画像をフェードさせる関数
+	function photoFade() {
+      //countと同じ番号のidが振られた<li>を一番後ろ（重なりの一番上にくる）へ移動させる
+		$("#photo li#list"+count).appendTo('#photo');
+      
+      //移動させた<li>の透明度を0に
+		$('#photo li:last').css({ opacity:'0'})
+      
+      //透明度を0→100へアニメーションさせ、フェードで出現するように見せる
+		$('#photo li:last').stop(true, false).animate({ opacity:'1' }, slidSpd ); 
+      
+      //【追加】全てのサムネイル画像のhover class を削除
+      $("#thum li").removeClass("hover");
+      
+      //【追加】countと同じ番号のidが振られたサムネイルのみhover class を付加
+      $("#thum #btn"+count).addClass("hover"); 
+
+      //【削除】全てのサムネイル画像の透明度を1に
+      //【削除】 $("#thum li").css({ backgroundColor: ''})
+      
+      //【削除】countと同じ番号のidが振られたサムネイルのみ半透明にアニメーションさせる
+      //【削除】 $("#thum #btn"+count).stop(true, false).animate({ backgroundColor: '#000'}); 
+	}
+   
+	//カウントを1増やす関数
+	function countUp(){
+      //countが画像枚数より大きくなれば0へ戻し、それ以外なら1増やす
+		if(count>=qua-1) {
+			count = 0;
+		} else {
+			count ++;
+		}
+	}
+
+	//slidTimer秒毎に繰り返し処理をさせる関数
+	var timerID;
+	function timerStart(){
+		clearInterval(timerID);
+		timerID = setInterval(function(){
+			countUp();
+			photoFade();
+		}, slidTimer);
+	};
+	
+   //サムネイルをホバーの処理
+   $("#thum li").hover(function(){
+      var index =  $("#thum li").index(this);
+      count = index;
+      photoFade();
+      timerStart();
+   },
+		
+					   
+//【削除】 function() {
+//【削除】         //マウスカーソルが離れた時の処理
+//【削除】       $("#thum li").css('background', '#FF0004');
+//【削除】     }				  
+ );
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+//スライドスタート
+	photoFade();
+	timerStart();
+});
+
+	
+	 
+	
+	
+	
+</script>
+</head>
+<body>
+<div id="slider">
+  <ul id="photo">
+    <li><img src="01.jpg"></li>
+    <li><img src="02.jpg"></li>
+    <li><img src="03.jpg"></li>
+    <li><img src="04.jpg"></li>
+    <li><img src="05.jpg"></li>
+  </ul>
+  <ul id="thum">
+    <li><a href="#">PAGE01</a></li>
+    <li><a href="#">PAGE02</a></li>
+    <li><a href="#">PAGE03</a></li>
+    <li><a href="#">PAGE04</a></li>
+    <li><a href="#">PAGE05</a></li>
+    </a>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
