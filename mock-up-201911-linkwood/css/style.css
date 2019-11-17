@@ -2,9 +2,10 @@
 
 /* common */
 
-body, html {
+body,
+html {
   margin: 0;
-  font-family: serif;
+  font-family: "Yu Mincho";
 }
 
 /*--main-- */
@@ -51,12 +52,19 @@ body, html {
 }
 
 .concept h1 {
-  color: #6697A9;
-  font-size: medium;
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: #005270;
+  font-family: "Yu Mincho";
 }
 
 .concept p {
-  font-size: 0.6em;
+  font-size: 9px;
+  letter-spacing: 1px;
+  line-height: 18px;
+  color: #222222;
+  font-family: "Yu Gothic";
 }
 
 /*--product-- */
@@ -72,8 +80,11 @@ body, html {
   margin-top: 40px;
   margin-bottom: 20px;
   text-align: center;
-  color: #6697A9;
-  font-size: medium;
+  font-size: 18px;
+  letter-spacing: 4px;
+  line-height: 18px;
+  color: #005270;
+  font-family: "Yu Mincho";
 }
 
 .product-box {
@@ -90,8 +101,12 @@ body, html {
 }
 
 .product-item h3 {
-  font-size: 1.0em;
   margin-bottom: 0px;
+  font-size: 14px;
+  letter-spacing: 4px;
+  line-height: 18px;
+  color: #454545;
+  font-family: "Yu Mincho";
 }
 
 .product-item p {
@@ -121,7 +136,7 @@ body, html {
   height: 160px;
 }
 
-.image-item img{
+.image-item img {
   width: 100%;
   height: 100%;
 }
@@ -150,28 +165,35 @@ body, html {
 
 /*--about-- */
 
-.about{
+.about {
   margin-top: 50px;
 }
 
 .corpname {
-	color: #444;
-	font-size: 16px;
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  color: #040404;
+  font-family: "Yu Mincho";
 }
-.corpname:before, .corpname:after {
-	content: "";
-	flex-grow: 1;
-	height: 1px;
-	background: #DCDCDC;
-	display: block;
-}
-.corpname:before {
-	margin-right: 2em;
-}
+
+.corpname:before,
 .corpname:after {
-	margin-left: 2em;
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background: #DCDCDC;
+  display: block;
+}
+
+.corpname:before {
+  margin-right: 2em;
+}
+
+.corpname:after {
+  margin-left: 2em;
 }
 
 .boxwrap {
@@ -193,19 +215,29 @@ body, html {
   margin: 0 40px;
   width: 250px;
   text-align: left;
-  font-size: 0.7em;
+  font-size: 8px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  color: #463021;
+  font-family: "Yu Gothic";
+  font-weight: 500;
 }
 
 .contact {
   padding: 0.5em 5em;
   margin: auto;
   border: solid 1px #DCDCDC;
-  font-size: 0.7em;
+  font-size: 8px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  color: #463021;
+  font-family: "Yu Gothic";
+  font-weight: 500;
 }
 
 .contact p {
-    margin: 0; 
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /*--footer-- */
@@ -218,5 +250,10 @@ footer {
 .footerwrap {
   position: relative;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 8px;
+  letter-spacing: 1px;
+  line-height: 15px;
+  color: #463021;
+  font-family: "Yu Gothic";
+  font-weight: 500;
 }
