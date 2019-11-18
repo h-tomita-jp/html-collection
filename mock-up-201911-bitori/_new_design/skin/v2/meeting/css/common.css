@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/* reset */
+/* html5doctor.com Reset v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/) - http://cssreset.com */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+
+
+/* initialize */
+body{
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	text-align: left;
+	color: #2e2f2f;
+	font-size: 13px;
+	font-family: "ヒラギノ角ゴ Pro W6", Hiragino Kaku Gothic Pro, Osaka, "ＭＳ Ｐゴシック", sans-serif;
+}
+a{
+	text-decoration: none;
+}
+/*--- 画像に隙間ができるなら ---*/
+img.fit, a img.fit{display:block; vertical-align:bottom; line-height:0; font:0;}
+
+
+
+
+/* common */
+.fl { float: left;}
+.fr { float: right;}
+.clear { clear: both;}
+.ofh { overflow: hidden;}
+.mauto { margin: 0 auto; display: block;}
+.lh { line-height: 0;}
+.center {text-align: center;}
+
+.clearfix {
+    zoom:1;
+}
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* margin properties */
+
+.mt2 { margin-top: 2px;}
+.mt5 { margin-top: 5px;}
+.mt10 { margin-top: 10px;}
+.mt15 { margin-top: 15px;}
+.mt20 { margin-top: 20px;}
+.mt21 { margin-top: 21px;}
+.mt25 { margin-top: 25px;}
+.mt30 { margin-top: 30px;}
+.mt35 { margin-top: 35px;}
+.mt40 { margin-top: 40px;}
+.mt45 { margin-top: 45px;}
+.mt50 { margin-top: 50px;}
+.mt55 { margin-top: 55px;}
+.mt60 { margin-top: 60px;}
+
+.mb2 { margin-bottom: 2px;}
+.mb5 { margin-bottom: 5px;}
+.mb10 { margin-bottom: 10px;}
+.mb15 { margin-bottom: 15px;}
+.mb20 { margin-bottom: 20px;}
+.mb25 { margin-bottom: 25px;}
+.mb30 { margin-bottom: 30px;}
+.mb35 { margin-bottom: 35px;}
+.mb40 { margin-bottom: 40px;}
+.mb45 { margin-bottom: 45px;}
+.mb50 { margin-bottom: 50px;}
+.mb55 { margin-bottom: 55px;}
+.mb60 { margin-bottom: 60px;}
+.mb70 { margin-bottom: 70px;}
+.mb80 { margin-bottom: 80px;}
+.mb90 { margin-bottom: 90px;}
+
+.ml5 { margin-left: 5px;}
+.ml10 { margin-left: 10px;}
+.ml15 { margin-left: 15px;}
+.ml20 { margin-left: 20px;}
+.ml25 { margin-left: 25px;}
+.ml30 { margin-left: 30px;}
+.ml35 { margin-left: 35px;}
+.ml40 { margin-left: 40px;}
+.ml45 { margin-left: 45px;}
+.ml50 { margin-left: 50px;}
+.ml150 { margin-left: 150px;}
+
+.mr1 { margin-right: 1px;}
+.mr5 { margin-right: 5px;}
+.mr10 { margin-right: 10px;}
+.mr12 { margin-right: 12px;}
+.mr15 { margin-right: 15px;}
+.mr20 { margin-right: 20px;}
+.mr30 { margin-right: 30px;}
+.mr35 { margin-right: 35px;}
+.mr40 { margin-right: 40px;}
+.mr45 { margin-right: 45px;}
+
+
+
+.pd10 {padding:10px}
+.pl5 {padding-left:5px}
+.pl10 {padding-left:10px}
+.pl15 {padding-left:15px}
+.pl20 {padding-left:20px}
+.pl30 {padding-left:30px}
+.pr0 {padding-right:0!important}
+.pr5 {padding-right:5px}
+.pr10 {padding-right:10px}
+.pr15 {padding-right:15px}
+.pr20 {padding-right:20px}
+.pr30 {padding-right:30px}
+.pt0 {padding-top:0!important}
+.pt5 {padding-top:5px}
+.pt10 {padding-top:10px}
+.pt15 {padding-top:15px}
+.pt20 {padding-top:20px}
+.pt25 {padding-top:25px}
+.pt30 {padding-top:30px}
+.pt60 {padding-top:60px}
+.pt70 {padding-top:70px}
+.pb5 {padding-bottom:5px}
+.pb10 {padding-bottom:10px}
+.pb15 {padding-bottom:15px}
+.pb20 {padding-bottom:20px}
+.pb25 {padding-bottom:25px}
+.pb30 {padding-bottom:30px}
+
+
+/* font-size based on 13px */
+.font10{font-size:77%}
+.font11{font-size:85%}
+.font12{font-size:93%}
+.font13{font-size:100%}
+.font14{font-size:108%}
+.font15{font-size:116%}
+.font16{font-size:123.1%}
+.font17{font-size:131%}
+.font18{font-size:138.5%}
+.font19{font-size:146.5%}
+.font20{font-size:153.9%}
