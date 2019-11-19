@@ -470,7 +470,7 @@ address { color: #fff; text-align: center; text-decoration: none; font-size: 0.8
 
 /* ▼study_monitor */
 .study_monitor{
-	margin: 0 auto;
+	margin: 0 auto 20px;
   display: flex;
   justify-content: center;
 }
@@ -482,7 +482,7 @@ address { color: #fff; text-align: center; text-decoration: none; font-size: 0.8
 
 .study_monitor img{
 	width: 50%;
-	margin-bottom: 20px;
+	height: 50%;
 }
 
 /* ▼about meeting */
@@ -633,11 +633,227 @@ address { color: #fff; text-align: center; text-decoration: none; font-size: 0.8
 	display: block;
 }
 
+/* ▼meeting_guide */
+.meeting_guide{
+	position: relative;
+}
+
+.meeting_image{
+	width:30%;
+	position: absolute;
+	top: 10px;
+	right: -40px;
+	z-index: 10;
+}
+
+.meeting_image img{
+	width:100%;
+	border-radius: 20%;
+}
+
+.meeting_guide{
+	width:80%;
+	margin: 20px auto;
+}
+
+.ribbon {
+  /*display: inline-block;*/
+  position: relative;
+  height: 45px;
+  text-align: center;
+  box-sizing: border-box;
+	width:60%;
+	margin: 20px;
+}
+.ribbon:before {/*左側のリボン端*/
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: -10px;
+  left: -35px;
+  z-index: -2;
+  border: 20px solid #009D95;
+  border-left-color: transparent;/*山形に切り抜き*/
+}
+
+.ribbon:after {/*右側のリボン端*/
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: -10px;
+  right: -35px;
+  z-index: -2;
+  border: 20px solid #009D95;
+  border-right-color: transparent;/*山形に切り抜き*/
+}
+
+.ribbon p {
+  /*display: inline-block;*/
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  line-height: 45px;
+  font-size: 18px;
+  color: #FFF;
+  background: #00A89C;/*真ん中の背景色*/
+}
+.ribbon p:before {
+  position: absolute;
+  content: '';
+  top: 100%;
+  left: 0;
+  border: none;
+  border-bottom: solid 10px transparent;
+  border-right: solid 15px #016661;/*左の折り返し部分*/
+}
+.ribbon p:after {
+  position: absolute;
+  content: '';
+  top: 100%;
+  right: 0;
+  border: none;
+  border-bottom: solid 10px transparent;
+  border-left: solid 15px #016661;/*右の折り返し部分*/
+}
+
+.meeting_flow_title{
+	font-size: large;
+	margin-bottom: 20px;
+}
+
+.meeting_flow li {
+    list-style-type: none;
+}
+
+.meeting_flow > li {
+    position: relative;
+}
+.meeting_flow > li:not(:last-child) {
+    margin-bottom: 40px;
+}
+.meeting_flow > li:not(:first-child)::before {
+    content: "";
+    height: 60px;
+    display: block;
+    border-left: 4px dotted #e5e5e5;
+    position: absolute;
+    top: -40px;
+    left: calc(10% + 30px - 2px);
+    z-index: 10;
+}
+.meeting_flow > li dl {
+    width: 100%;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #377C6B;
+    border-radius: 10px;
+    position: relative;
+}
+.meeting_flow > li:not(:last-child) dl::before,
+.meeting_flow > li:not(:last-child) dl::after {
+    content: "";
+    border: solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.meeting_flow > li:not(:last-child) dl::before {
+    border-width: 22px;
+    border-top-color: #377C6B;
+}
+.meeting_flow > li:not(:last-child) dl::after {
+    border-width: 20px;
+    border-top-color: #fff;
+}
+.meeting_flow > li dl dt {
+    font-size: 20px;
+    font-weight: 600;
+    color: #00A89C;
+    flex-basis: 25%;
+    margin-right: 2vw;
+    text-align: center;
+}
+.meeting_flow > li dl dt .icon {
+    font-size: 12px;
+    color: #fff;
+    background: rgb(107,144,219);
+    background: linear-gradient(to right, #2AAB92 0%,#4AC8B0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b90db', endColorstr='#66d5e9',GradientType=1 );
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    display: block;
+    border-radius: 20px;
+    position: relative;
+    z-index: 100;
+}
+
+.meeting_flow dd {
+	text-align: left;
+	line-height: 2em;
+}
+
+.meeting_flow{
+	margin-bottom: 10px;
+}
+
+.meeting_flow .note{
+	font-size: 1em;
+	line-height: 1.2em;
+}
+
+.after_meeting{
+	margin-top: 20px;
+}
+
+/* ▼voice */
+.voice{
+	width:80%;
+	margin: 20px auto;
+}
+
+.voice p{
+	font-size: 1.7em;
+	font-weight: bold;
+}
+
+.voice_title{
+	font-size: large;
+	margin-bottom: 20px;
+}
+
+.voice_image{
+	width:70%;
+	margin: 20px auto;
+  position: relative;
+}
+
+.voice_image img{
+	width:100%;
+}
+
+#img-box-mini{
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  width:100%;
+ }
+#img-box-text{
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0 0 15px #FF6694;
+  font-size: 1.5em;
+  font-family: 'Hiragino Maru Gothic Pro','ヒラギノ丸ゴ Pro W4', sans-serif;
+}
+
 /* ▼meeting_detail */
 .meeting_detail{
+	width:80%;
 	background-color: #EEEEEC;
 	height: 226px;
-	margin-top: 95px;
+	margin: 95px auto 0;
 }
 
 .meeting_detail:after{
@@ -667,6 +883,90 @@ address { color: #fff; text-align: center; text-decoration: none; font-size: 0.8
 
 .meeting_detail_text span{
 	font-size: 30px;
+}
+
+/* ▼faq */
+.faq_title{
+	font-size: 2.5em;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.accordionbox{
+	width: 78%;
+	background:#EEEEEC;
+	margin: 10px auto 40px;
+	padding: 20px;
+}
+
+.accordionlist dt {
+	position:relative;
+	display: block;
+	background: #fff;
+	padding: 20px 0 10px 5px;
+	border-top: 1px solid #DFDFDF;
+	margin-top: 10px;
+	border-radius: 10px;
+	font-size: 1.7em;
+	color: #00A89C;
+}
+.accordionlist dt:first-child {
+	border-top: none !important;
+}
+.accordionlist dt .title {
+	padding-left: 10px;
+	float: left;
+}
+.accordionlist dd {
+	display: none;
+	background: #fff;
+	padding: 10px 0 20px 15px;
+	border-radius: 0 0 10px 10px;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	border-top: solid thin #EEEEEC;
+}
+.accordion_icon,
+.accordion_icon span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+.accordion_icon {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	float: right;
+	margin-right: 5px;
+}
+.accordion_icon span {
+	position: absolute;
+	left: 6px;
+	width: 50%;
+	height: 2px;
+	background-color: black;
+	border-radius: 4px;
+}
+
+.accordion_icon span:nth-of-type(1) {
+	top: 5px;
+	transform: rotate(0deg);
+}
+
+.accordion_icon span:nth-of-type(2) {
+	top: 5px;
+	transform: rotate(90deg);
+}
+
+/*＋、×切り替え*/
+.accordion_icon.active span:nth-of-type(1) {
+	top: 5px;
+	transform: rotate(45deg);
+}
+
+.accordion_icon.active span:nth-of-type(2) {
+	top: 5px;
+	transform: rotate(135deg);
 }
 
 /* ▼monitor item */
