@@ -58,3 +58,4 @@ https://www.bitori.jp/meeting/
 https://www.istockphoto.com/jp
 画像は仮でデザインして頂き、コーディング時にお渡し致します。
 
+https://h-tomita-jp.github.io/html-collection/mock-up-201911-bitori/
