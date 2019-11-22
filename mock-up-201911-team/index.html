@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>【モックアップ】チーム分けツール</title>
+</head>
+
+<body>
+  <div class="base">
+    <input type="button" value="1" id="p_1" class="person" />
+    <input type="button" value="2" id="p_2" class="person" />
+    <input type="button" value="3" id="p_3" class="person" />
+  
+    <div id="disp_team" class="showteam">-</div>
+    
+  </div>
+
+  <div class="table">
+    <div class="title">チームA</div>
+    <div id="disp_countA" class="counter">0</div>
+  </div>
+  <div class="table">
+    <div class="title">チームB</div>
+    <div id="disp_countB" class="counter">0</div>
+  </div>
+
+  <input type="button" value="リセット" id="btn_reset" />
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
