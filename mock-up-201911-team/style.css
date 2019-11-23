@@ -49,12 +49,21 @@ input {
   display: table-cell;
 }
 
+.minus {
+  color: #000;
+  background-color: gray;
+  font-size: 36px;
+  border-radius: 10px;
+  padding: 10px;
+  display: table-cell;
+}
+
 #disp_countA {
   background-color: red;
 }
 
 #disp_countB {
-  background-color: blue;
+  background-color: yellow;
 }
 
 #btn_reset {

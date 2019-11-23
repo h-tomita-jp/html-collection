@@ -12,22 +12,31 @@
     <input type="button" value="1" id="p_1" class="person" />
     <input type="button" value="2" id="p_2" class="person" />
     <input type="button" value="3" id="p_3" class="person" />
-  
+
     <div id="disp_team" class="showteam">-</div>
-    
+
   </div>
 
   <div class="table">
     <div class="title">チームA</div>
     <div id="disp_countA" class="counter">0</div>
+    <input type="button" value="減らす" id="minus_A" class="minus" />
   </div>
   <div class="table">
     <div class="title">チームB</div>
     <div id="disp_countB" class="counter">0</div>
+    <input type="button" value="減らす" id="minus_B" class="minus" />
   </div>
 
   <input type="button" value="リセット" id="btn_reset" />
 
+  <audio id="Sound" preload="auto">
+    <source src="sound/bleep.mp3" type="audio/mp3">
+    <source src="sound/bleep.ogg" type="audio/ogg">
+    <source src="sound/bleep.wav" type="audio/wav">
+    <p>※お使いのブラウザは、残念ながらHTML5のaudio要素をサポートしていないようですから、音は鳴りません。</p>
+  </audio>
+  
   <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
   <script type="text/javascript" src="script.js"></script>
 
