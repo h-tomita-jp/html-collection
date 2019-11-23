@@ -1,23 +1,30 @@
 #video-area {
-    position: relative;
-}
-#video-area:-webkit-full-screen .video {
-    width: 100%;
-    height: auto;
-}
-#video-area:-moz-full-screen .video {
-    width: 100%;
-    height: auto;
-}
-#video-area:-ms-fullscreen .video {
-    width: 100%;
-    height: auto;
-}
-#video-area:fullscreen .video {
-    width: 100%;
-    height: auto;
+  position: relative;
 }
 
-#video2, #video3, #video4{
-  display: none;
+.vwrap {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
+#video-area:-webkit-full-screen .video {
+  width: 100%;
+  height: auto;
+}
+
+#video-area:-moz-full-screen .video {
+  width: 100%;
+  height: auto;
+}
+
+#video-area:-ms-fullscreen .video {
+  width: 100%;
+  height: auto;
+}
+
+#video-area:fullscreen .video {
+  width: 100%;
+  height: auto;
+}
+
