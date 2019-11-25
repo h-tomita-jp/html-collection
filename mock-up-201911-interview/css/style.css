@@ -33,6 +33,34 @@ header .wrapper {
   margin: 0 auto;
 }
 
+.main-header .logo {
+    display: block;
+    float: left;
+    width: 65px;
+    height: 65px;
+    padding: 0;
+    margin-top: -10px;
+    margin-left: 10px;
+    background: #fff url(../img/aedceb8f1d0ac9ced07b96920e24c05849581385124f3b76b7247c91cd06f8ab.png) no-repeat 0 0;
+    white-space: nowrap;
+    text-indent: 100%;
+    overflow: hidden;
+}
+.main-header .logo {
+    display: block;
+    float: left;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    width: 230px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0 15px;
+    font-weight: 300;
+}
+
+
+
 .wrapper {
   width: 1200px;
   margin: 0 auto;
@@ -1186,6 +1214,18 @@ ul.sns li.tw {
   padding-top: 20px;
 }
 
+.concierge-link p,
+.concierge-tell-number p {
+  text-align: center;
+}
+
+.concierge-contact .concierge-link a img,
+.concierge-contact .concierge-tell-number img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 @media screen and (max-width:1174px) {
   #service ul.tab li {
     margin-right: 3%;
@@ -1976,6 +2016,7 @@ ul.sns li.tw {
     margin-top: 0px;
     margin-bottom: 30px;
   }
+
 
   footer .inline_b {
     display: none;
