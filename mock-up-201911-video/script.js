@@ -4,6 +4,8 @@ var video1 = document.getElementById("video1");
 var video2 = document.getElementById("video2");
 var video3 = document.getElementById("video3");
 var video4 = document.getElementById("video4");
+var video5 = document.getElementById("video5");
+var video6 = document.getElementById("video6");
 
 // fullボタンを押した時
 full.addEventListener('click', function() {
@@ -33,6 +35,8 @@ function keydown() {
     video2.style.opacity = 0;
     video3.style.opacity = 0;
     video4.style.opacity = 0;
+    video5.style.opacity = 0;
+    video6.style.opacity = 0;
     video1.currentTime = 0;
     video1.play();
   }
@@ -41,6 +45,8 @@ function keydown() {
     video1.style.opacity = 0;
     video3.style.opacity = 0;
     video4.style.opacity = 0;
+    video5.style.opacity = 0;
+    video6.style.opacity = 0;
     video2.currentTime = 0;
     video2.play();
   }
@@ -49,6 +55,8 @@ function keydown() {
     video1.style.opacity = 0;
     video2.style.opacity = 0;
     video4.style.opacity = 0;
+    video5.style.opacity = 0;
+    video6.style.opacity = 0;
     video3.currentTime = 0;
     video3.play();
   }
@@ -57,8 +65,26 @@ function keydown() {
     video1.style.opacity = 0;
     video2.style.opacity = 0;
     video3.style.opacity = 0;
+    video5.style.opacity = 0;
+    video6.style.opacity = 0;
     video4.currentTime = 0;
     video4.play();
+  }
+  if (event.keyCode == 53 || event.keyCode == 101) {
+    video5.style.opacity = 1;
+    video1.style.opacity = 0;
+    video2.style.opacity = 0;
+    video3.style.opacity = 0;
+    video4.style.opacity = 0;
+    video6.style.opacity = 0;
+  }
+  if (event.keyCode == 54 || event.keyCode == 102) {
+    video6.style.opacity = 1;
+    video1.style.opacity = 0;
+    video2.style.opacity = 0;
+    video3.style.opacity = 0;
+    video4.style.opacity = 0;
+    video5.style.opacity = 0;
   }
   if (event.keyCode == 27) {
     if (document.webkitCancelFullScreen) {
