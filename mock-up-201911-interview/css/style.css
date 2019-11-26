@@ -47,6 +47,17 @@ a {
   margin: 0 auto;
 }
 
+h1.maintitle {
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, sans-serif;
+  color: #2d2d2d;
+  font-size: 2em;
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+}
+
 nav {
   padding: 0;
   height: 70px;
