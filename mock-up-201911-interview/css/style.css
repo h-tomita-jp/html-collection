@@ -53,10 +53,6 @@ nav {
   position: relative;
 }
 
-nav.sp {
-  display: none;
-}
-
 nav.clone-nav {
   position: fixed;
   top: 0;
@@ -83,24 +79,6 @@ nav img {
   height: auto;
   display: inline;
   vertical-align: middle;
-}
-
-nav ul.left {
-  z-index: 2;
-  position: absolute;
-  left: 180px;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-nav ul.right {
-  z-index: 2;
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
 }
 
 nav ul li {
@@ -153,7 +131,6 @@ nav ul li a {
   border-radius: 3px;
   border: 1px solid #999;
 }
-
 
 .header-bnr.tell-num {
   width: auto;
