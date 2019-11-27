@@ -417,21 +417,25 @@ header.mainvisual .case_c img {
   }
 }
 
-
-
 #comment .wrapper {
   clear: both;
   border-top: 1px solid gray;
   width: 800px;
 }
 
-.concierge-link p,
-.concierge-tell-number p {
+.concierge-contact{
+  margin-bottom: 20px;
+}
+.concierge-link p {
+  text-align: center;
+}
+
+.concierge-tell-number {
   text-align: center;
 }
 
 .concierge-contact .concierge-link a img,
-.concierge-contact .concierge-tell-number img {
+.concierge-contact .concierge-tell-number a img {
   max-width: 100%;
   height: auto;
 }
