@@ -13,8 +13,6 @@ body {
   padding: 0;
   text-rendering: optimizeLegibility;
   font-feature-settings: 'palt' 1;
-  /*-webkit-font-smoothing: antialiased;*/
-  /*-moz-osx-font-smoothing: grayscale;*/
   background-color: #fafafa;
 }
 
@@ -120,28 +118,20 @@ nav ul li a {
   background-color: #f09618 !important;
   padding: 4px 10px !important;
   border: 1px solid #f09618;
-  /*-webkit-border-radius: 3px;*/
-  /*-moz-border-radius: 3px;*/
-  /*-ms-border-radius: 3px;*/
   border-radius: 3px;
 }
 
 .header-bnr.no-link {
   width: auto;
   height: 26px;
-  /*margin-top: 9px;*/
   margin-right: 5px;
   line-height: 1.3 !important;
   display: block;
-  /*vertical-align: middle;*/
   font-size: 10px;
   font-weight: 600;
   color: #fff !important;
   background-color: #999 !important;
   padding: 4px 10px !important;
-  /*-webkit-border-radius: 3px;*/
-  /*-moz-border-radius: 3px;*/
-  /*-ms-border-radius: 3px;*/
   border-radius: 3px;
   border: 1px solid #999;
 }
@@ -153,14 +143,10 @@ nav ul li a {
   height: 26px;
   line-height: 1.7 !important;
   display: block;
-  /*vertical-align: middle;*/
   font-size: 10px;
   color: #666 !important;
   background-color: #fff !important;
   padding: 0 !important;
-  /*-webkit-border-radius: 3px;*/
-  /*-moz-border-radius: 3px;*/
-  /*-ms-border-radius: 3px;*/
   border-radius: 3px;
 }
 
@@ -176,9 +162,6 @@ nav ul li a {
   background-color: #e81455;
   color: #fff;
   font-weight: 600;
-  /*-webkit-border-radius: 2px;*/
-  /*-moz-border-radius: 2px;*/
-  /*-ms-border-radius: 2px;*/
   border-radius: 2px;
   position: absolute;
   top: 0;
@@ -273,13 +256,10 @@ nav ul li a {
 }
 
 #nav-toggle:hover {
-  /*display: block;*/
   cursor: pointer;
 }
 
 #global-nav.open {
-  /*-moz-transform: translateY(526px);*/
-  /*-webkit-transform: translateY(526px);*/
   transform: translateY(526px);
 }
 
@@ -433,7 +413,7 @@ header.mainvisual .case_c img {
 
 @media (max-width: 768px) {
   #comment {
-    padding: 30px 0px 40px 0px;
+    padding: 20px 0px 40px 0px;
   }
 }
 
@@ -458,6 +438,11 @@ header.mainvisual .case_c img {
 
 @media (max-width: 768px) {
 
+  #voice,
+  #comment {
+    margin-left: 5px;
+  }
+
   #humberger {
     position: absolute;
     top: 5px;
@@ -471,6 +456,10 @@ header.mainvisual .case_c img {
     padding: 0;
     margin: 0;
     opacity: 0;
+  }
+
+  .header-bnr.tell-num .free {
+    display: none;
   }
 
   #global-nav {
