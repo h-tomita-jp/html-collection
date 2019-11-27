@@ -407,14 +407,20 @@ header.mainvisual .case_c img {
 
 
 #comment {
-  padding: 110px 0px 40px 0px;
+  padding: 110px 0px 0px 0px;
   background-color: #fafafa;
 }
 
 @media (max-width: 768px) {
   #comment {
-    padding: 20px 0px 40px 0px;
+    padding: 20px 0px 0px 0px;
   }
+}
+
+#comment p {
+  line-height: 2em;
+  margin: 30px 0;
+  text-align: left;
 }
 
 #comment .wrapper {
