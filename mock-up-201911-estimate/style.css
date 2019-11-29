@@ -1,0 +1,181 @@
+h1 {
+  text-align: center;
+  font-size: 1.3em;
+}
+
+h1::after {
+  content: '';
+  display: block;
+  background: #59C4F2;
+  height: 3px;
+  width: 2em;
+  margin: 5px auto;
+}
+
+.boxwrap {
+  max-width: 800px;
+  width: 95%;
+  margin: 50px auto 80px;
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  margin: 1em auto;
+  letter-spacing: 0.2em;
+}
+
+h2 {
+  font-size: 1em;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.title p {
+  float: left;
+  font-size: 0.5em;
+  margin: 0.5em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.box {
+  position: relative;
+  padding: 2.5em 1em;
+  margin: 0 auto;
+  font-weight: bold;
+  border: solid 5px;
+  border-color: #A5A5A5;
+  letter-spacing: 0.3em;
+  line-height: 2em;
+}
+
+.box.blue {
+  border-color: #59C4F0;
+}
+
+.box:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -32px;
+  left: 0;
+  width: 0px;
+  height: 0px;
+  margin: auto;
+  border-style: solid;
+  border-color: #A5A5A5 transparent transparent transparent;
+  border-width: 30px 30px 0 30px;
+}
+
+.box.blue:after {
+  border-color: #59C4F0 transparent transparent transparent;
+}
+
+table th {
+  width: 250px;
+  text-align: left;
+}
+
+.input {
+  margin: 5px 15px 5px 5px;
+  width: 430px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .box {
+    font-size: 0.5em;
+  }
+  table th {
+    width: 100px;
+    text-align: left;
+  }
+  .input {
+    width: 150px;
+    margin-right: 0;
+  }
+}
+
+input,
+select {
+  height: 2.2em;
+}
+
+select {
+  margin-left: 5px;
+}
+
+.inner_input {
+  display: inline-block;
+  width: 48%;
+  margin: 0;
+  padding: 0;
+}
+
+.input input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.radio label {
+  display: inline-block;
+  width: 110px;
+  font-size: 0.8em;
+}
+
+input[type="radio"] {
+  margin-right: 0;
+  vertical-align: middle;
+}
+
+.purpose td {}
+
+table {
+  table-layout: fixed;
+}
+
+.narrow {
+  width: 100px;
+}
+
+input+span{
+  margin-left: 0.5em;
+}
+
+.bus_box {
+  width: 90%;
+  margin:0 auto;
+  /*height: 350px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: blue;
+}
+
+.bustype {
+  width: 320px;
+  height: 300px;
+  margin-top: 40px;
+  border-radius:10px;
+  background-color: red;
+}
+
+.label_wrap{
+  margin: 20px;
+  text-align: center;
+}
+
+.img_wrap{
+  margin-top: 5px;
+  height: 150px;
+}
+
+.bus_desc{
+  font-size:0.8em;
+  letter-spacing: 0.2em;
+}

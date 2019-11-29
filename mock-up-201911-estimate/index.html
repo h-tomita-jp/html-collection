@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="style.css">
+  <title>【モックアップ】WordPressサイトでのお見積もりフォーム(1P)設定&コーディング</title>
+  <!-- font-awesome CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1>インターネットでお見積もり</h1>
+
+  <form id="demo" action="#" onsubmit="return false;">
+
+    <div class="boxwrap">
+      <div class="title">
+        <h2><span class="fa fa-star" style="color:#FCD266"></span>お客様情報</h2>
+        <p><span style="color:red">※</span>マークは入力必須項目です</p>
+      </div>
+      <div class="box">
+        <table class="cform">
+
+          <tr>
+            <th>お名前<span style="color:red">※</span></th>
+            <td>
+              <div class="input">
+                <div class="inner_input">
+                  <input type="text" name="lastname" class="inner_input" value="">
+                </div>
+                <div class="inner_input">
+                  <input type="text" name="firstname" class="inner_input" value="">
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>ふりがな<span style="color:red">※</span></th>
+            <td>
+              <div class="input">
+                <div class="inner_input">
+                  <input type="text" name="lastruby" class="inner_input" value="">
+                </div>
+                <div class="inner_input">
+                  <input type="text" name="firstruby" class="inner_input" value="">
+                </div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>団体・学校・会社名<span style="color:red">※</span></th>
+            <td>
+              <div class="input">
+                <input type="text" name="affiliation" value="">
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>連絡先電話番号<span style="color:red">※</span></th>
+            <td>
+              <div class="input">
+                <input type="text" name="telephone" value="">
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>FAX番号</th>
+            <td>
+              <div class="input">
+                <input type="text" name="fax" value="">
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>メールアドレス<span style="color:red">※</span></th>
+            <td>
+              <div class="input">
+                <input type="text" name="mail" value="">
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th></th>
+            <td>
+              <div class="input">
+                <input type="text" name="mail_confirm" value="確認のため再度入力してください">
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <th>見積もり受け取り方法<span style="color:red">※</span></th>
+            <td>
+              <div class="radio">
+                <label><input type="radio" name="contact" value="メール" />
+                  メール</label>
+                <label><input type="radio" name="contact" value="電話" />
+                  電話</label>
+                <label><input type="radio" name="contact" value="FAX" />
+                  FAX</label>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+    <div class="boxwrap">
+      <div class="title">
+        <h2><span class="fa fa-star" style="color:#FCD266"></span>ご利用人数・目的</h2>
+      </div>
+      <div class="box blue">
+        <table class="cform">
+
+          <tr>
+            <th>ご利用目的</th>
+            <td>
+              <select id="purpose" class="purpose">
+                <option>学校教育旅行</option>
+                <option>観光・社員・無尽旅行</option>
+                <option>結婚式・法事</option>
+                <option>クラブ活動・合宿</option>
+                <option>研修・視察</option>
+                <option>レジャー・イベント送迎</option>
+                <option>その他</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <th>乗車予定人数</th>
+            <td>
+              <div class="input narrow">
+                <input type="text" name="person" value=""><span>人</span>
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+    <div class="boxwrap">
+      <div class="title">
+        <h2><span class="fa fa-star" style="color:#FCD266"></span>バスの種類</h2>
+      </div>
+      <div class="box blue">
+        <table class="cform">
+
+          <div class="discription">
+            <span class="fa fa-star" style="color:#FCD266"></span>ご希望の車種をお選びください
+          </div>
+          <div class="bus_box">
+            <div class="bustype" onClick="JavaScript:bustypeImg('large');">
+              <div class="label_wrap">
+                <label><input type="radio" id="large" name="bustype" value="大型バス" />
+                  大型バス</label>
+                <div class="img_wrap">
+                  <IMG src="img/large.png">
+                </div>
+                <span class="bus_desc">乗車人数目安：53名～60名</span>
+                <input type="text" id="num_large" name="number" size="8" value=""><span>台</span>
+              </div>
+            </div>
+            <div class="bustype" onClick="JavaScript:bustypeImg('largeWithLift');">
+              <div class="label_wrap">
+                <label><input type="radio" id="largeWithLift" name="bustype" value="大型バスリフト付きバス" />
+                  大型バスリフト付きバス</label>
+                <div class="img_wrap">
+                  <IMG src="img/largeWithLift.png">
+                </div>
+                <span class="bus_desc">乗車人数目安：車椅子～6台・正席～45</span>
+                <input type="text" id="num_largeWithLift" name="number" size="8" value=""><span>台</span>
+              </div>
+            </div>
+            <div class="bustype" onClick="JavaScript:bustypeImg('middle');">
+              <div class="label_wrap">
+                <label><input type="radio" id="middle" name="bustype" value="中型バス" />
+                  中型バス</label>
+                <div class="img_wrap">
+                  <IMG src="img/middle.png">
+                </div>
+                <span class="bus_desc">乗車人数目安：24名～39名</span>
+                <input type="text" id="num_middle" name="number" size="8" value=""><span>台</span>
+              </div>
+            </div>
+            <div class="bustype" onClick="JavaScript:bustypeImg('small');">
+              <div class="label_wrap">
+                <label><input type="radio" id="large" name="bustype" value="小型バス" />
+                  小型バス</label>
+                <div class="img_wrap">
+                  <IMG src="img/small.png">
+                </div>
+                <span class="bus_desc">乗車人数目安：10名～22名</span>
+                <input type="text" id="num_small" name="number" size="8" value=""><span>台</span>
+              </div>
+            </div>
+          </div>
+
+        </table>
+      </div>
+    </div>
+
+    <SCRIPT type="text/javascript">
+      function bustypeImg(chkimg) {
+        document.getElementById(chkimg).checked = true;
+        document.getElementById('num_'+chkimg).disabled = false;
+      }
+    </SCRIPT>
+
+    <div class="boxwrap">
+      <div class="title">
+        <h2><span class="fa fa-star" style="color:#FCD266"></span>目的地・時間</h2>
+      </div>
+      <div class="box blue">
+        <table class="cform">
+
+          <tr>
+            <th>団体・学校・会社名<span style="color:red">※</span></th>
+            <td>
+              <div class="input">
+                <input type="text" name="affiliation" value="">
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+    <div class="boxwrap">
+      <div class="title">
+        <h2><span class="fa fa-star" style="color:#FCD266"></span>オプション・お問い合わせ</h2>
+      </div>
+      <div class="box blue">
+        <table class="cform">
+
+          <tr>
+            <th>団体・学校・会社名<span style="color:red">※</span></th>
+            <td>
+              <div class="input">
+                <input type="text" name="affiliation" value="">
+              </div>
+            </td>
+          </tr>
+
+        </table>
+      </div>
+    </div>
+
+    <input id="btn_submit" name="btn_submit" value="送信" type="submit" />
+  </form>
+
+</body>
+
+</html>
