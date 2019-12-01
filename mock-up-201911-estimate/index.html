@@ -14,7 +14,7 @@
 
   <h1>インターネットでお見積もり</h1>
 
-  <form id="demo" action="#" onsubmit="return false;">
+  <form id="estimate" action="#" onsubmit="return false;">
 
     <div class="boxwrap">
       <div class="title">
@@ -157,8 +157,8 @@
       <div class="box blue">
         <table class="cform">
 
-          <div class="discription">
-            <span class="fa fa-star" style="color:#FCD266"></span>ご希望の車種をお選びください
+          <div class="discription" style="margin-left:10px;">
+            <span class="fa fa-play-circle" style="color:#59C4F0"></span>ご希望の車種をお選びください
           </div>
           <div class="bus_box">
             <div class="bustype" onClick="JavaScript:bustypeImg('large');">
@@ -169,7 +169,7 @@
                   <IMG src="img/large.png">
                 </div>
                 <span class="bus_desc">乗車人数目安：53名～60名</span>
-                <input type="text" id="num_large" name="number" size="8" value=""><span>台</span>
+                <input type="text" id="num_large" name="number" size="8" value="" disabled><span>台</span>
               </div>
             </div>
             <div class="bustype" onClick="JavaScript:bustypeImg('largeWithLift');">
@@ -180,7 +180,7 @@
                   <IMG src="img/largeWithLift.png">
                 </div>
                 <span class="bus_desc">乗車人数目安：車椅子～6台・正席～45</span>
-                <input type="text" id="num_largeWithLift" name="number" size="8" value=""><span>台</span>
+                <input type="text" id="num_largeWithLift" name="number" size="8" value="" disabled><span>台</span>
               </div>
             </div>
             <div class="bustype" onClick="JavaScript:bustypeImg('middle');">
@@ -191,18 +191,18 @@
                   <IMG src="img/middle.png">
                 </div>
                 <span class="bus_desc">乗車人数目安：24名～39名</span>
-                <input type="text" id="num_middle" name="number" size="8" value=""><span>台</span>
+                <input type="text" id="num_middle" name="number" size="8" value="" disabled><span>台</span>
               </div>
             </div>
             <div class="bustype" onClick="JavaScript:bustypeImg('small');">
               <div class="label_wrap">
-                <label><input type="radio" id="large" name="bustype" value="小型バス" />
+                <label><input type="radio" id="small" name="bustype" value="小型バス" />
                   小型バス</label>
                 <div class="img_wrap">
                   <IMG src="img/small.png">
                 </div>
                 <span class="bus_desc">乗車人数目安：10名～22名</span>
-                <input type="text" id="num_small" name="number" size="8" value=""><span>台</span>
+                <input type="text" id="num_small" name="number" size="8" value="" disabled><span>台</span>
               </div>
             </div>
           </div>
@@ -214,7 +214,18 @@
     <SCRIPT type="text/javascript">
       function bustypeImg(chkimg) {
         document.getElementById(chkimg).checked = true;
-        document.getElementById('num_'+chkimg).disabled = false;
+        var targets = new Array('large', 'largeWithLift', 'middle', 'small');
+        targets.forEach(
+          function(type) {
+            if (type == chkimg) {
+              document.getElementById('num_' + type).disabled = false;
+            }
+            else {
+              document.getElementById('num_' + type).disabled = true;
+              document.getElementById('num_' + type).value = "";
+            }
+          }
+        );
       }
     </SCRIPT>
 
@@ -223,18 +234,39 @@
         <h2><span class="fa fa-star" style="color:#FCD266"></span>目的地・時間</h2>
       </div>
       <div class="box blue">
-        <table class="cform">
 
-          <tr>
-            <th>団体・学校・会社名<span style="color:red">※</span></th>
-            <td>
-              <div class="input">
-                <input type="text" name="affiliation" value="">
-              </div>
-            </td>
-          </tr>
+        <div class="discription" style="margin-left:10px; font-size:0.8em;">
+          <span class="fa fa-play-circle" style="color:#59C4F0;"></span>出発地・目的地をご記入ください。
+        </div>
+        <div class="input_round">
+          <div class="input_set">
+            <span class="fa fa-play" style="color:#59C4F0; font-size:0.5em; margin-right:5px;"></span>出発地
+            <input type="text" name="dep_location" size="25">
+          </div>
+          <div class="input_set">
+            <span class="fa fa-play" style="color:#59C4F0; font-size:0.5em; margin-right:5px;"></span>到着地
+            <input type="text" name="arr_location" size="25">
+          </div>
+        </div>
 
-        </table>
+        <div class="discription" style="margin-top:20px; margin-left:10px; font-size:0.8em;">
+          <span class="fa fa-play-circle" style="color:#59C4F0;"></span>出発時刻・目的時刻をご記入ください。
+        </div>
+        <div class="input_round">
+          <div class="input_set date">
+            <span class="fa fa-play" style="color:#59C4F0; font-size:0.5em; margin-right:5px;"></span>出発日時
+            <span>月日</span><input class="input_date" type="date" name="dep_date" size="10">
+            <span>時間</span><input class="input_time" type="time" name="dep_time" size="5">
+          </div>
+        </div>
+        <div class="input_round" style="margin-top:20px;">
+          <div class="input_set date">
+            <span class="fa fa-play" style="color:#59C4F0; font-size:0.5em; margin-right:5px;"></span>帰着日時
+            <span>月日</span><input class="input_date" type="date" name="arr_date" size="10">
+            <span>時間</span><input class="input_time" type="time" name="arr_time" size="5">
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -243,22 +275,34 @@
         <h2><span class="fa fa-star" style="color:#FCD266"></span>オプション・お問い合わせ</h2>
       </div>
       <div class="box blue">
-        <table class="cform">
 
-          <tr>
-            <th>団体・学校・会社名<span style="color:red">※</span></th>
-            <td>
-              <div class="input">
-                <input type="text" name="affiliation" value="">
-              </div>
-            </td>
-          </tr>
+        <div class="discription" style="margin-left:10px; font-size:0.8em;">
+          <span class="fa fa-play-circle" style="color:#59C4F0;"></span>バスガイド（15,000円）
+        </div>
+        <div style="margin-left:20px;">
+          <div class="radio">
+            <label><input type="radio" name="guide" value="必要" />
+                  必要</label>
+            <label><input type="radio" name="guide" value="不要" />
+                  不要</label>
+          </div>
+        </div>
 
-        </table>
+        <div class="discription" style="margin-top:20px; margin-left:10px; font-size:0.8em;">
+          <span class="fa fa-play-circle" style="color:#59C4F0;"></span>ご要望などございましたらご記入ください。
+        </div>
+        <div style="margin-left:20px;">
+          <div style="margin-left:10%; width:80%;"></div>
+            <textarea style="width:95%;" name="request" rows="8"></textarea>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <input id="btn_submit" name="btn_submit" value="送信" type="submit" />
+    <div class="btn-square-pop">
+    <span class="fa fa-play" style="color:#000"><input id="btn_submit" name="btn_submit" value="送信" type="submit" />
+    </div>
   </form>
 
 </body>
