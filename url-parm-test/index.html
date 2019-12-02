@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>urlパラメタを表示します</title>
+</head>
+
+<body>
+
+  <div id="text">
+    <p>URLパラメタを表示します</p>
+  </div>
+
+  <div id="urlparm">
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" id="sns_scripts_in_head">
+    window.onload = function() {
+      var params = getParameter();
+      alert(params + "がURLパラメタです。");
+      document.getElementById('urlparm').textContent = params
+
+    };
+
+    //パラメータを取得する
+    function getParameter() {
+      var paramsArray = [];
+      var url = location.href;
+      parameters = url.split("#");
+      if (parameters.length > 1) {
+        url = parameters[0];
+      }
+      parameters = url.split("?");
+      if (parameters.length > 1) {
+        var params = parameters[1].split("&");
+        for (i = 0; i < params.length; i++) {
+          var paramItem = params[i].split("=");
+          paramsArray[paramItem[0]] = paramItem[1];
+        }
+      }
+      return paramsArray;
+    };
+  </script>
+
+</body>
+
+</html>
