@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>ユーザーエージェントを表示します</title>
+</head>
+
+<body>
+
+  <div id="text">
+    <p>ユーザーエージェントを表示します</p>
+  </div>
+
+  <div id="useragent">
+
+  </div>
+
+  <script type="text/javascript">
+    window.onload = function() {
+      var ua = navigator.userAgent;
+      alert(ua + "がユーザーエージェントです。");
+      document.getElementById('useragent').textContent = ua
+    };
+  </script>
+
+</body>
+
+</html>
