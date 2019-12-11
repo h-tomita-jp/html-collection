@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>タブメニューテスト</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="cp_tab">
+    <input type="radio" name="cp_tab" id="default" aria-controls="default" checked>
+    <input type="radio" name="cp_tab" id="tab1_1" aria-controls="first_tab01">
+    <label for="tab1_1">First Tab</label>
+    <input type="radio" name="cp_tab" id="tab1_2" aria-controls="second_tab01">
+    <label for="tab1_2">Second Tab</label>
+    <input type="radio" name="cp_tab" id="tab1_3" aria-controls="third_tab01">
+    <label for="tab1_3">Third Tab</label>
+    <input type="radio" name="cp_tab" id="tab1_4" aria-controls="force_tab01">
+    <label for="tab1_4">Force Tab</label>
+    <div class="cp_tabpanels">
+      <div id="defaultview" class="cp_tabpanel">
+        <h2>default view</h2>
+        <p>default view</p>
+      </div>
+      <div id="first_tab01" class="cp_tabpanel">
+        <h2>First Tab</h2>
+        <p>First Tab text</p>
+      </div>
+      <div id="second_tab01" class="cp_tabpanel">
+        <h2>Second Tab</h2>
+        <p>Second Tab text</p>
+      </div>
+      <div id="third_tab01" class="cp_tabpanel">
+        <h2>Third Tab</h2>
+        <p>Third Tab text</p>
+      </div>
+      <div id="force_tab01" class="cp_tabpanel">
+        <h2>Force Tab</h2>
+        <p>Force Tab text</p>
+      </div>
+    </div>
+
+
+
+  </div>
+</body>
+
+</html>

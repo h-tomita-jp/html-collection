@@ -16,12 +16,28 @@
 
   </div>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <script type="text/javascript">
+
     window.onload = function() {
       var ua = navigator.userAgent;
       alert(ua + "がユーザーエージェントです。");
       document.getElementById('useragent').textContent = ua
+      sendmail(ua);
     };
+
+  function sendmail(ua) {
+    $.ajax( {
+		type: "GET",
+		url: "mail.php",
+		data: "ua=" + ua,
+		success: function(html){
+		alert(html);
+		}
+    } );
+  };
+
   </script>
 
 </body>
