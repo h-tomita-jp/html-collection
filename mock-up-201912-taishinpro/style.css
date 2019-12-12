@@ -1,0 +1,97 @@
+.cls_002 {
+	font-family: Arial, serif;
+	font-size: 14.1px;
+	color: rgb(0, 176, 79);
+}
+
+.cls_003 {
+	font-family: "Century", serif;
+	font-size: 14.1px;
+	color: rgb(0, 176, 79);
+}
+
+.cls_004 {
+	font-family: Arial, serif;
+	font-size: 14.1px;
+	color: rgb(0, 176, 79);
+}
+
+.cls_007 {
+	font-family: Arial, serif;
+	font-size: 16.0px;
+	color: rgb(0, 31, 95);
+}
+
+.nav li {
+	display: inline-block;
+	font-family: Arial, serif;
+	font-size: 16.0px;
+	padding: 2px 0.5em;
+	border: 2px solid #869CB3;
+	margin: 0.1em;
+	line-height: 18px;
+}
+
+.nav {
+	border-bottom: 2px solid #8F8B5C;
+}
+
+.cls_008 {
+	font-family: Arial, serif;
+	font-size: 14.1px;
+	color: rgb(32, 87, 103);
+}
+
+.textcontent {
+	text-align: left;
+}
+
+.cls_010 {
+	font-family: Arial, serif;
+	font-size: 12.1px;
+	color: rgb(0, 31, 95);
+}
+
+.cls_012 {
+	font-family: Arial, serif;
+	font-size: 20.1px;
+	color: rgb(0, 111, 192);
+}
+
+.cls_013 {
+	font-family: Arial, serif;
+	font-size: 20.1px;
+	color: rgb(0, 111, 192);
+}
+
+.cls_014 {
+	font-family: Arial, serif;
+	font-size: 20.1px;
+	color: rgb(255, 0, 0);
+}
+
+.cls_015 {
+	font-family: Arial, serif;
+	font-size: 20.1px;
+	color: rgb(255, 0, 0);
+}
+
+.cls_016 {
+	font-family: Arial, serif;
+	font-size: 12.1px;
+	color: rgb(0, 0, 0);
+}
+
+.margin_left1em {
+	margin-left: 1em;
+}
+
+.cls_020 {
+	font-family: Arial, serif;
+	font-size: 14.1px;
+	color: rgb(0, 31, 95);
+}
+
+.textcontent p{
+	line-height: 1em;
+}
