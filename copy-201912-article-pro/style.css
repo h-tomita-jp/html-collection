@@ -10986,24 +10986,24 @@ header {
 .top-03-img-text-1 , .top-03-img-text-2 , .top-03-img-text-3 {
 	width: 480px;
 }
-.top-03-img-text-1 {
-	position: relative;
-	top: -320px;
-	left: 460px;
-}
+/*.top-03-img-text-1 {*/
+/*	position: relative;*/
+/*	top: -320px;*/
+/*	left: 460px;*/
+/*}*/
 .top-03-img-2 {
 	margin: 0 0 -330px 0;
 }
-.top-03-img-text-2 {
-	position: relative;
-	top: -260px;
-	left: 460px;
-}
-.top-03-img-text-3 {
-	position: relative;
-	top: -120px;
-	left: 460px;
-}
+/*.top-03-img-text-2 {*/
+/*	position: relative;*/
+/*	top: -260px;*/
+/*	left: 460px;*/
+/*}*/
+/*.top-03-img-text-3 {*/
+/*	position: relative;*/
+/*	top: -120px;*/
+/*	left: 460px;*/
+/*}*/
 
 
 

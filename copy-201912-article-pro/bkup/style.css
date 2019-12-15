@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/*
+Theme Name: 記事作成代行Pro
+Description:記事作成代行Pro
+Theme URI: https://article-pro.com/cp-bin/wordpress/
+Author: Kazunori Horimoto
+Author URI: https://studio-trunk.jp/
+Version: 1.0
+*/
+
+/*追加CSS*/
+
+.single-con .size-full {
+	width: 100% !important;
+	height: 100% !important;
+	object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+/*ボディ全体*/
+
+body {
+	font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "メイリオ", sans-serif;
+}
+
+
+h1 {
+	font-size: 60px;
+	font-weight: 600;
+	color: #ff9933;
+}
+
+h2 {
+	font-size: 60px;
+	font-weight: 600;
+	color: #ff9933;
+}
+
+h3 {
+	font-size: 35px;
+	font-weight: 600;
+	color: #333333;
+}
+
+h4 {
+	font-size: 36px;
+	font-weight: 700;
+	color: #333333;
+}
+
+p {
+	font-size: 24px;
+	font-weight: 300;
+	color: #333333;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.mainImage img,
+.top-dai img,
+.top-03-img-2 img,
+.wi-950 img
+{
+	width: 100%;
+}
+
+.icon img,
+.top-09-down img,
+.planCon img{
+	width: 10%;
+}
+
+
+
+
+
+
+
+
+
+
