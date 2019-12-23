@@ -4,10 +4,21 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <title>【モックアップ】チーム分けツール</title>
+  <title>チーム分けツール</title>
+  <script>
+    window.onload = function() {
+      var context = new AudioContext();
+    }
+  </script>
 </head>
 
 <body>
+
+  <div class="openingWrap">
+    <div id="opening">
+      <img src="opening.png"></img>
+    </div>
+  </div>
 
   <div class="reset_box">
     <input type="button" value="X" id="btn_reset" />
@@ -28,6 +39,14 @@
     <input type="button" value="3" id="p_3" class="person" />
   </div>
 
+
+  <iframe src="sound/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+  <audio id="openingSE" preload="auto" autoplay>
+    <source src="sound/opening.mp3" type="audio/mp3">
+    <source src="sound/opening.ogg" type="audio/ogg">
+    <source src="sound/opening.wav" type="audio/wav">
+    <p>※お使いのブラウザは、残念ながらHTML5のaudio要素をサポートしていないようですから、音は鳴りません。</p>
+  </audio>
 
   <audio id="plusSE" preload="auto">
     <source src="sound/plus.mp3" type="audio/mp3">
@@ -50,7 +69,6 @@
     <p>※お使いのブラウザは、残念ながらHTML5のaudio要素をサポートしていないようですから、音は鳴りません。</p>
   </audio>
   
-  <!--<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
   <script type="text/javascript" src="script.js"></script>
 
 </body>

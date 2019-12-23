@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title>チーム分けツール</title>
+  <link rel="preload" href="sound/opening.mp3" as="audio" type="audio/mp3">
+  <link rel="preload" href="sound/opening.ogg" as="audio" type="audio/ogg">
+  <link rel="preload" href="sound/opening.wav" as="audio" type="audio/wav">
+  <script>
+    window.onload = function() {
+      var context = new AudioContext();
+    }
+  </script>
+</head>
+
+<body>
+  <!--<iframe src="sound/opening.mp3" allow="autoplay" id="audio" style="display:none"></iframe>-->
+  <iframe src="sound/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>
+  <audio id="openingSE" preload="auto" autoplay>
+    <source src="sound/opening.mp3" type="audio/mp3">
+    <source src="sound/opening.ogg" type="audio/ogg">
+    <source src="sound/opening.wav" type="audio/wav">
+    <p>※お使いのブラウザは、残念ながらHTML5のaudio要素をサポートしていないようですから、音は鳴りません。</p>
+  </audio>
+
+  <!--<div class="openingWrap">-->
+  <!--  <div id="opening">-->
+  <!--    <img src="opening.png"></img>-->
+  <!--  </div>-->
+  <!--</div>-->
+
+
+  <script type="text/javascript" src="test.js"></script>
+
+</body>
+
+</html>

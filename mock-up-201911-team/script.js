@@ -1,3 +1,4 @@
+var opening = document.getElementById("opening");
 var p_1 = document.getElementById("p_1");
 var p_2 = document.getElementById("p_2");
 var p_3 = document.getElementById("p_3");
@@ -8,9 +9,25 @@ var disp_countB = document.getElementById("disp_countB");
 var reset_btn = document.getElementById("btn_reset");
 var team_A = 0;
 var team_B = 0;
+var openingSE = document.getElementById("openingSE");
 var plusSE = document.getElementById("plusSE");
 var minusSE = document.getElementById("minusSE");
 var resetSE = document.getElementById("resetSE");
+
+// オープニング処理
+window.onload = function() {
+  // var context = new AudioContext();
+  // openingSE.currentTime = 0;
+  openingSE.play();
+  var palyOpeningSE = function() {
+    openingSE.play();
+  }
+  var fadeout = function() {
+    opening.classList.add('close');
+  }
+  setTimeout(fadeout, 2000);
+  // setTimeout(palyOpeningSE, 2000);
+}
 
 // 人数ボタンクリック処理
 p_1.onclick = function() {

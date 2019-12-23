@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <title>recording</title>
+</head>
+
+<body>
+
+  <div style="display:flex;">
+    <button id="recorder">Record</button>
+    <audio id="player" controls></audio>
+  </div>
+
+  <a id="sound"></a>
+
+<form action="http://htomitajp.starfree.jp/test-voicemail/upload.php" method="post" enctype="multipart/form-data">
+  ファイル：<br />
+  <input type="file" name="upfile" id="upfile" size="30" /><br />
+  <br />
+  <input type="submit" value="アップロード" />
+</form>
+<div id="encoded">
+  
+</div>
+
+</body>
+<script>
+  if (!navigator.mediaDevices) {
+    alert("mediaDevices is unavailable");
+  }
+
+  var mediaRecorder = null;
+  var localstream;
+
+  // 録音開始
+  rec_start = function() {
+    console.log("rec_start");
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(function(stream) {
+        localstream = stream;
+        mediaRecorder = new MediaRecorder(stream);
+        mediaRecorder.start();
+      })
+      .catch(function(e) {
+        console.log(e);
+      });
+  }
+
+  // 録音停止
+  rec_stop = function() {
+    console.log("rec_stop");
+    mediaRecorder.stop();
+    var recordedChunks = [];
+    mediaRecorder.ondataavailable = function(e) {
+      document.getElementById('player').src = URL.createObjectURL(e.data);
+      document.getElementById('upfile').src = URL.createObjectURL(e.data);
+
+var superBuffer = new Blob(e, {type: 'audio/webm'});
+var reader = new window.FileReader();
+reader.readAsDataURL(superBuffer); 
+reader.onloadend = function() {
+   base64 = reader.result;
+   base64 = base64.split(',')[1];
+   console.log(base64 );
+}
+
+      document.getElementById('encoded').innerHTML = btoa(e.data);
+
+      var d = new Date();
+      var fn = ((((d.getFullYear()*100 + d.getMonth()+1)*100 + d.getDate())*100
+                + d.getHours())*100 + d.getMinutes())*100 + d.getMinutes();
+      sound.href = URL.createObjectURL(e.data);
+      sound.textContent = "Get Audio";
+      sound.download = fn+".webm";
+      // ExecUpload(e.data);
+    }
+
+
+    localstream.getTracks().forEach(track => track.stop());
+  }
+
+  document.getElementById('recorder').onclick = function() {
+    // ボタンの色で録音開始、停止を切り替える
+    if (this.style.backgroundColor == '') {
+      rec_start(); // 開始
+      this.style.backgroundColor = '#c71585';
+    }
+    else {
+      rec_stop(); // 停止
+      this.style.backgroundColor = '';
+    }
+  }
+
+    function ExecUpload(data) {
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.onreadystatechange = function () {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+          alert(xmlhttp.responseText);
+        }
+      };
+      xmlhttp.open("POST", "upload.php", true);
+      xmlhttp.send(data);
+    }
+    
+</script>
