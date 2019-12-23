@@ -9,6 +9,7 @@ var disp_countB = document.getElementById("disp_countB");
 var reset_btn = document.getElementById("btn_reset");
 var team_A = 0;
 var team_B = 0;
+var iframeAudio = document.getElementById("iframeAudio");
 var openingSE = document.getElementById("openingSE");
 var plusSE = document.getElementById("plusSE");
 var minusSE = document.getElementById("minusSE");
@@ -16,9 +17,10 @@ var resetSE = document.getElementById("resetSE");
 
 // オープニング処理
 window.onload = function() {
-  // var context = new AudioContext();
-  // openingSE.currentTime = 0;
-  openingSE.play();
+  var isChrome = /Chrome/.test(window.navigator.userAgent) && /Google Inc/.test(window.navigator.vendor);
+  if (!isChrome) {
+    iframeAudio.remove();
+  }
   var palyOpeningSE = function() {
     openingSE.play();
   }
