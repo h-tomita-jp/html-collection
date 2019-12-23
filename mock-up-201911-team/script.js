@@ -19,16 +19,13 @@ var resetSE = document.getElementById("resetSE");
 window.onload = function() {
   var isChrome = /Chrome/.test(window.navigator.userAgent) && /Google Inc/.test(window.navigator.vendor);
   if (!isChrome) {
-    iframeAudio.remove();
-  }
-  var palyOpeningSE = function() {
-    openingSE.play();
+    iframeAudio.parentElement.removeChild(iframeAudio);
   }
   var fadeout = function() {
-    opening.classList.add('close');
+    // opening.classList.add('close');
+    opening.className += "close";
   }
   setTimeout(fadeout, 2000);
-  // setTimeout(palyOpeningSE, 2000);
 }
 
 // 人数ボタンクリック処理
