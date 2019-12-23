@@ -5,6 +5,20 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <title>チーム分けツール</title>
+  <script type="text/javascript">
+    var iframeAudio = document.getElementById("iframeAudio");
+    var opening = document.getElementById("opening");
+    window.onload = function() {
+      var isChrome = /Chrome/.test(window.navigator.userAgent);
+      if (!isChrome) {
+        iframeAudio.parentElement.removeChild(iframeAudio);
+      }
+      var fadeout = function() {
+        opening.className += "close";
+      }
+      setTimeout(fadeout, 2000);
+    }
+  </script>
 </head>
 
 <body>
