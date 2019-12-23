@@ -5,19 +5,37 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <title>チーム分けツール</title>
-  <link rel="preload" href="sound/opening.mp3" as="audio" type="audio/mp3">
-  <link rel="preload" href="sound/opening.ogg" as="audio" type="audio/ogg">
-  <link rel="preload" href="sound/opening.wav" as="audio" type="audio/wav">
-  <script>
-    window.onload = function() {
-      var context = new AudioContext();
-    }
-  </script>
 </head>
 
 <body>
-  <!--<iframe src="sound/opening.mp3" allow="autoplay" id="audio" style="display:none"></iframe>-->
-  <!--<iframe src="sound/silence.mp3" allow="autoplay" id="audio" style="display:none"></iframe>-->
+
+  <div class="openingWrap">
+    <div id="opening">
+      <img src="opening.png"></img>
+    </div>
+  </div>
+
+  <div class="reset_box">
+    <input type="button" value="X" id="btn_reset" />
+  </div>
+
+  <div class="counter_container">
+    <input type="button" value="0" id="disp_countA" class="counter" style="background-color: red;" />
+    <input type="button" value="0" id="disp_countB" class="counter" style="background-color: yellow;" />
+  </div>
+
+  <div class="showteam_container" id="disp_team_container" >
+    <div id="disp_team" class="showteam">-</div>
+  </div>
+
+  <div class="person_container">
+    <input type="button" value="1" id="p_1" class="person" />
+    <input type="button" value="2" id="p_2" class="person" />
+    <input type="button" value="3" id="p_3" class="person" />
+  </div>
+
+
+  <iframe src="sound/silence.mp3" allow="autoplay" id="iframeAudio" style="display:none"></iframe>
   <audio id="openingSE" preload="auto" autoplay>
     <source src="sound/opening.mp3" type="audio/mp3">
     <source src="sound/opening.ogg" type="audio/ogg">
@@ -25,14 +43,28 @@
     <p>※お使いのブラウザは、残念ながらHTML5のaudio要素をサポートしていないようですから、音は鳴りません。</p>
   </audio>
 
-  <!--<div class="openingWrap">-->
-  <!--  <div id="opening">-->
-  <!--    <img src="opening.png"></img>-->
-  <!--  </div>-->
-  <!--</div>-->
+  <audio id="plusSE" preload="auto">
+    <source src="sound/plus.mp3" type="audio/mp3">
+    <source src="sound/plus.ogg" type="audio/ogg">
+    <source src="sound/plus.wav" type="audio/wav">
+    <p>※お使いのブラウザは、残念ながらHTML5のaudio要素をサポートしていないようですから、音は鳴りません。</p>
+  </audio>
 
+  <audio id="minusSE" preload="auto">
+    <source src="sound/minus.mp3" type="audio/mp3">
+    <source src="sound/minus.ogg" type="audio/ogg">
+    <source src="sound/minus.wav" type="audio/wav">
+    <p>※お使いのブラウザは、残念ながらHTML5のaudio要素をサポートしていないようですから、音は鳴りません。</p>
+  </audio>
 
-  <script type="text/javascript" src="test.js"></script>
+  <audio id="resetSE" preload="auto">
+    <source src="sound/reset.mp3" type="audio/mp3">
+    <source src="sound/reset.ogg" type="audio/ogg">
+    <source src="sound/reset.wav" type="audio/wav">
+    <p>※お使いのブラウザは、残念ながらHTML5のaudio要素をサポートしていないようですから、音は鳴りません。</p>
+  </audio>
+  
+  <script type="text/javascript" src="script.js"></script>
 
 </body>
 

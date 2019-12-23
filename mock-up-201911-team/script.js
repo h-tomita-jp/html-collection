@@ -17,7 +17,7 @@ var resetSE = document.getElementById("resetSE");
 
 // オープニング処理
 window.onload = function() {
-  var isChrome = /Chrome/.test(window.navigator.userAgent) && /Google Inc/.test(window.navigator.vendor);
+  var isChrome = /Chrome/.test(window.navigator.userAgent);
   if (!isChrome) {
     iframeAudio.parentElement.removeChild(iframeAudio);
   }
