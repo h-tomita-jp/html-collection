@@ -5,20 +5,6 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
   <title>チーム分けツール</title>
-  <script type="text/javascript">
-    var iframeAudio = document.getElementById("iframeAudio");
-    var opening = document.getElementById("opening");
-    window.onload = function() {
-      var isChrome = /Chrome/.test(window.navigator.userAgent);
-      if (!isChrome) {
-        iframeAudio.parentElement.removeChild(iframeAudio);
-      }
-      var fadeout = function() {
-        opening.className += "close";
-      }
-      setTimeout(fadeout, 2000);
-    }
-  </script>
 </head>
 
 <body>
@@ -49,7 +35,7 @@
   </div>
 
 
-  <iframe src="sound/opening.mp3" allow="autoplay" id="iframeAudio" style="display:none"></iframe>
+  <iframe src="" allow="autoplay" id="iframeAudio" style="display:none"></iframe>
   <audio id="openingSE" preload="auto" autoplay>
     <source src="sound/opening.mp3" type="audio/mp3">
     <source src="sound/opening.ogg" type="audio/ogg">

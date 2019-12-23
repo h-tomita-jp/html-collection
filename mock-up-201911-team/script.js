@@ -16,16 +16,16 @@ var minusSE = document.getElementById("minusSE");
 var resetSE = document.getElementById("resetSE");
 
 // オープニング処理
-// window.onload = function() {
-//   var isChrome = /Chrome/.test(window.navigator.userAgent);
-//   if (!isChrome) {
-//     iframeAudio.parentElement.removeChild(iframeAudio);
-//   }
-//   var fadeout = function() {
-//     opening.className += "close";
-//   }
-//   setTimeout(fadeout, 2000);
-// }
+window.onload = function() {
+  var isChrome = /Chrome/.test(window.navigator.userAgent);
+  if (isChrome) {
+    iframeAudio.setAttribute('src', 'sound/opening.mp3');
+  }
+  var fadeout = function() {
+    opening.className += "close";
+  }
+  setTimeout(fadeout, 2000);
+}
 
 // 人数ボタンクリック処理
 p_1.onclick = function() {
