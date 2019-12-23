@@ -22,7 +22,6 @@ window.onload = function() {
     iframeAudio.parentElement.removeChild(iframeAudio);
   }
   var fadeout = function() {
-    // opening.classList.add('close');
     opening.className += "close";
   }
   setTimeout(fadeout, 2000);
@@ -47,8 +46,7 @@ function judge(person) {
     disp_team_container.style.backgroundColor = "Red";
     team_A += person;
     disp_countA.value = team_A;
-  }
-  else {
+  } else {
     disp_team.innerHTML = "YELLOW";
     disp_team_container.style.backgroundColor = "Yellow";
     team_B += person;
