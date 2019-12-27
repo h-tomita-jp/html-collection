@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta name="robots" content="index,follow,noarchive">
+
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="format-detection" content="telephone=no">
+
+
+<title>日本ナレッジ株式会社  </title>
+<meta name="description" content="日本ナレッジは、システム検証サービス、パッケージ開発、システム受託、システムコンサル、鋼材業システム導入コンサル、システムサポート事業を行い、「ITとスポーツの融合」を推進します。" />
+<meta name="keywords" content="日本ナレッジ,検証ソリューション,NKC,KNOW-NET,KNOW-NET2,STC,札幌,札幌検証センター,検証,評価,テスト,QA,ソフトウェアテスト,第三者検証,第3者検証,独立検証,品質特性,品質管理,品質保証,品質,機能,非機能,検証,システム検証,組み込み検証,ソフトウェア検証,ユーザビリティ検証,品質向上,静的検証,動的検証,製品検証,機能テスト,互換性検証,IOT,WEB検証,品質リスク,検証サポート,検証支援,テストプロセス改善,スマートフォン,不具合,製品検証,互換性,バグ,テストプラン,テスト計画,テスト設計,テストドキュメント,フォーマット,テスター,テストエンジニア,請負,派遣,IVIA,IVEC,SQuBOK,IEEE829,ISO9126,QCD,QCD最適化" />
+
+
+<!-- JS files -->
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+
+<script type="text/javascript" src="https://www.know-net.co.jp/site/wp-content/themes/knowledge/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://www.know-net.co.jp/site/wp-content/themes/knowledge/js/side-fixed.js"></script>		
+	
+<script type="text/javascript" src="https://www.know-net.co.jp/site/wp-content/themes/knowledge/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="https://www.know-net.co.jp/site/wp-content/themes/knowledge/js/gnavRollover.js"></script>
+<script type="text/javascript" src="https://www.know-net.co.jp/site/wp-content/themes/knowledge/js/nav-toggle.js"></script>	
+<script type="text/javascript" src="https://www.know-net.co.jp/site/wp-content/themes/knowledge/js/pagetop.js"></script>
+<script type="text/javascript" src="https://www.know-net.co.jp/site/wp-content/themes/knowledge/js/main.js"></script>
+<!-- <script type="text/javascript" src="https://www.know-net.co.jp/site/wp-content/themes/knowledge/js/menu.js"></script> -->	
+<script type="text/javascript" src="https://www.know-net.co.jp/site/wp-content/themes/knowledge/js/nav.js"></script>	
+
+
+
+
+
+<link href="https://www.know-net.co.jp/site/wp-content/themes/knowledge/css/base.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.know-net.co.jp/site/wp-content/themes/knowledge/css/content.css" rel="stylesheet" type="text/css" media="all">
+<link href="https://www.know-net.co.jp/site/wp-content/themes/knowledge/css/index.css" rel="stylesheet" type="text/css" media="all">
+
+
+
+
+<!-- CSS files -->
+
+
+
+<!-- Favicon, Thumbnail image -->
+<link rel="shortcut icon" href="https://www.know-net.co.jp/site/wp-content/themes/knowledge/images/favicon.ico">
+	
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.know-net.co.jp\/site\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.3.2"}};
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://www.know-net.co.jp/site/wp-includes/css/dist/block-library/style.min.css?ver=5.3.2' type='text/css' media='all' />
+<link rel='https://api.w.org/' href='https://www.know-net.co.jp/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.know-net.co.jp/site/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.know-net.co.jp/site/wp-includes/wlwmanifest.xml" /> 
+
+<!--[if (gte IE 6)&(lte IE 8)]>
+<script src="js/selectivizr.js"></script>
+<![endif]-->
+
+<!--OGP設定-->
+<meta property="og:title" content="日本ナレッジ株式会社" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.know-net.co.jp" />
+<meta property="og:image" content="#" />
+<meta property="og:site_name" content="日本ナレッジ株式会社" />
+<meta property="og:description" content="日本ナレッジは、システム検証サービス、パッケージ開発、システム受託、システムコンサル、鋼材業システム導入コンサル、システムサポート事業を行い、「ITとスポーツの融合」を推進します。" />
+<!--OGP設定ここまで-->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110296998-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110296998-1');
+</script>
+
+
+</head>
+
+
+
+<body class="top" id="pTop">
+
+
+	<div id="wrapper">
+
+		<div id="header" class="clearfix">
+			<div class="inner">
+				<div id="logo">
+					<h1><a href="https://www.know-net.co.jp/"><img src="../images/common/logo.png" alt="日本ナレッジ"></a></h1>
+					<h2>日本ナレッジは徹底したユーザー志向の情報サービス企業です</h2>
+				</div>
+				
+				<div id="nav_toggle">
+					<div>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				
+
+				<!-- gnav  -->
+				
+					<ul id="gnav" class="clearfix">
+						<li class="gnav01 sp"><a href="https://www.know-net.co.jp/">ホーム</a></li>
+						<li class="gnav02 sp"><a href="https://www.know-net.co.jp/service/">サービス</a></li>
+						<li class="gnav03 sp"><a href="https://www.know-net.co.jp/case/">事例</a></li>
+						<li class="gnav04 sp"><a href="https://www.know-net.co.jp/concept/">会社概要</a></li>
+						<li class="gnav05 sp"><a href="https://www.know-net.co.jp/recruit">採用情報</a></li>
+					</ul>
+				
+				<!-- nav -->
+<ul class="nav">
+
+<li class="nav_li">
+<a href="https://www.know-net.co.jp/" class="active">ホーム</a>
+</li>
+
+<li class="nav_li">
+<a href="https://www.know-net.co.jp/service/">サービス</a>
+<ul class="sub">
+<li><a href="https://www.know-net.co.jp/service/">検証・テスト</a></li>
+<li><a href="https://www.know-net.co.jp/service/#dev">ソフトウェア開発</a></li>
+</ul>
+</li>
+
+<li class="nav_li">
+	
+<a href="https://www.know-net.co.jp/case/">事　例</a>
+		
+	<ul class="sub">
+	<li><a href="https://www.know-net.co.jp/case/#test">検証・テスト</a></li>
+	<li><a href="https://www.know-net.co.jp/case/#dev">ソフトウェア開発</a></li>
+	</ul>						
+</li>
+
+	
+<li class="nav_li">
+	
+<a href="https://www.know-net.co.jp/concept/">会社概要</a>
+		
+	<ul class="sub">
+	<li><a href="https://www.know-net.co.jp/concept/">企業コンセプト</a></li>
+	<li><a href="https://www.know-net.co.jp/company/">会社概要</a></li>
+	<li><a href="https://www.know-net.co.jp/outline/">会社沿革</a></li>
+	</ul>						
+</li>	
+	
+	
+<li class="nav_li">
+		
+<li class="nav_li"><a href="https://www.know-net.co.jp/recruit/">採用情報</a></li>
+		
+	
+</ul>
+
+				<!-- // nav -->
+				
+				
+
+
+				<!-- / #gnav END -->
+
+
+
+
+
+
+
+			</div>
+		</div> 
+		<!-- / header End -->	
+
+<!-- slide_top -->
+<div id="slide_top" class="pc_mode">
+<div style="text-align: center">
+<img src="../images/index/img_slide_main2.jpg" alt=""/ class="mt10">
+</div>
+</div>
+
+<div id="main" class="sp_mode">
+<img src="../images/index/img_slide_sp01.jpg" alt=""/>
+</div>
+<!-- / slide_top End -->
+
+
+	<!-- main -->
+	<div id="main" class="text_c">
+		
+			<!-- content -->
+				<div id="content">
+			
+			<!-- section-->
+			<div class="section" id="wrap_dev">
+			  <h2>Quality & Development <br class="sp"><span>日本ナレッジトータルソリューション</span></h2>
+			  
+				<!-- inner-->
+				<div class="inner">
+					
+					<div class="flex_between inner2 wrap_service">
+						
+						<!-- #test-->	
+						<div class="box_1_of_3" id="test">
+							<h3 class="head_service">Software-Testing<br>
+                    		<span>− 検証・テスト −</span></h3>
+							<p class="txt_box">日本ナレッジのソフトウェアテストは、検証専門会社の知見＆豊富な検証実績に基づく第三者検証サービスです。</p>
+							<ul class="list_cnt">
+								<li><a href="https://www.know-net.co.jp/test-onsite/">オンサイト検証</a></li>
+								<li><a href="https://www.know-net.co.jp/test-offisite/">オフサイト検証</a></li>
+							</ul>
+							<div class="btn_box"><a href="https://www.know-net.co.jp/service/">詳しく見る</a></div>
+						</div>
+						<!-- //#test-->
+		
+						<!-- #development-->	
+						<div class="box_1_of_3" id="development">
+							<h3 class="head_service">Development<br>
+                    		<span>− ソフトウェア開発 −</span></h3>
+							<p class="txt_box">基幹業務パッケージ開発に30年携わり続けたノウハウがあります。今までの実績と経験を活かし、多様な業種に対してシステム開発をすることが可能です。</p>
+							<ul class="list_cnt">
+								<li class="list2"><a href="https://www.know-net.co.jp/service/#dev_erp">業種特化ERP</a></li>
+								<li class="list2"><a href="https://www.know-net.co.jp/service/#dev_sec">セキュリティ・ソリューション</a></li>
+								<li class="list2"><a href="https://www.know-net.co.jp/service/#dev_other">Other</a></li>
+							</ul>							
+							<div class="btn_box"><a href="https://www.know-net.co.jp/service/#dev">詳しく見る</a></div>
+						</div>
+						<!-- //#development-->
+
+		
+						<!-- #others-->	
+						<div class="box_1_of_3" id="other">
+							<h3 class="head_service">Others<br>
+                    		<span>− 業界活動 −</span></h3>
+							<p class="txt_box">IVIAやCSAJなど、ITを含むコンピュータソフトウエアの普及、技術力向上、技術者の育成などの活動を行っている団体に、理事企業として参加しております。</p>
+							<p><img src="../images/index/img_other_logo.png" alt=""/></p>
+							<div class="btn_box clear"><a href="https://www.know-net.co.jp/test-external/">詳しく見る</a></div>
+						</div>
+						<!-- //#others-->						
+						
+					</div>
+					
+
+					
+					
+		      </div><!-- //inner-->
+					</div><!-- // section End -->	
+					
+
+
+
+
+					<!-- section -->
+				  <div class="section" id="news">
+						<h2 class="tColor_blue">News & Topics</h2>
+
+
+<table border="0">
+  <tbody>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.12.18</td>
+      <td><a href="https://www.know-net.co.jp/20191218-topics-01/">【冬期休業のお知らせ】</a></td>
+    </tr>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.12.06</td>
+      <td><a href="https://www.know-net.co.jp/20191206-topics-01/">【DEFESA Logger for Desktop 及び<br>IVEX Logger for Desktopをご利用のユーザ様へ】<br>Windows7から10へのアップグレードに関するお知らせ</a></td>
+    </tr>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.11.29</td>
+      <td><a href="https://www.know-net.co.jp/20191129-topics-01/">IWESQ2019にて、論文を発表致します</a></td>
+    </tr>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.11.21</td>
+      <td><a href="https://www.know-net.co.jp/20191121-topics-01/">一般財団法人Rubyアソシエーションの協賛会員に参加しました</a></td>
+    </tr>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.11.15</td>
+      <td><a href="https://www.know-net.co.jp/20191115-topics-01/">Rubyビジネス推進協議会の理事就任について</a></td>
+    </tr>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.11.13</td>
+      <td><a href="https://www.know-net.co.jp/20191113-topics-01/">「＠IT」に【変わる「ソフトウェア品質」再考（2）】が掲載されました</a></td>
+    </tr>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.11.07</td>
+      <td><a href="https://www.know-net.co.jp/20191107-topics-01/">「諏訪圏工業メッセ2019」に出展いたしました</a></td>
+    </tr>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.11.01</td>
+      <td><a href="https://www.know-net.co.jp/20191101-topics-01/">台風19号による郡山センターからのお知らせ</a></td>
+    </tr>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.10.03</td>
+      <td><a href="https://www.know-net.co.jp/20191003-topics-01/">「＠IT」に【変わる「ソフトウェア品質」再考（1）】が掲載されました</a></td>
+    </tr>
+
+
+    <tr>
+      <th><span>お知らせ<span></th>
+      <td class="day">2019.10.01</td>
+      <td><a href="https://www.know-net.co.jp/20191001-topics-01/">2020年度新人社員内定式を行いました</a></td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+
+<!-- <div class="btn_box">
+	<a href="#">詳しく見る</a>
+	</div> -->
+					  </div>
+
+					</div><!-- // section End -->	
+			
+	</div><!-- //content -->		
+	</div>
+	<!-- // main End -->	
+
+
+
+
+
+
+<!-- wrap_contact -->
+	<div id="wrap_contact">
+      <h3>Contact</h3>
+      <p class="text_c">メールフォーム、<br class="sp">またはお電話でお問い合わせください。<br>
+        メールフォームの場合は、<br class="sp">原則3営業日以内にご返信しております。<br class="sp">お急ぎの方はお電話にてお問い合わせください。
+      </p>
+		
+		<div class="clearfix mt15"> <a href="https://www.know-net.co.jp/contact/" class="hover80"><img src="../images/common/contact_mail.png" class="float_l" alt="メールでお問い合わせ"></a>
+			<a href="tel:0338454781" class="hover60"><img src="../images/common/contact_tel.png" class="float_r"></a>
+		</div>
+	</div>
+	<!-- / wrap_contact End -->
+
+
+<!-- footer_top_bnr-->	
+	<div id="footer_top_bnr">
+		<ul class="bnr_area">
+			<li><a href="https://www.know-net.co.jp/blog/tech_wg/" target="_blank"><img src="../images/index/index_btm_blog.png" alt="Blog　日々是テスト"/></a></li>
+			<li><a href="https://twitter.com/KNOWNET2" target="_blank"><img src="../images/index/index_btm_twitter.png" alt="twitter"/></a></li>
+			<li><a href="https://www.facebook.com/NihonKnowledge" target="_blank"><img src="../images/index/index_btm_fb.png" alt="facebook"/></a></li>
+			<li><a href="https://www.ivia.or.jp/item43/item191" target="_blank"><img src="../images/index/index_btm_pp.png" alt="IVIA"/></a></li>
+		</ul>
+	</div>
+	<!-- / footer_top_bnr End -->	
+	
+	<!-- footer_top_bnr2-->	
+	<div id="footer_top_bnr2">
+		<ul>
+			<li class="sp_box_1_of_2"><img src="../images/index/img_bnr_9001.png" alt="" class="iso9001"/></li>
+			<li class="sp_box_1_of_2"><img src="../images/index/img_bnr_isms.png" alt="" class="iso27001"/></li>
+			<li class="sp_box_1_of_3"><a href="https://privacymark.jp/" target="_blank"><img src="../images/index/img_bnr_p.png" alt="" class="privacy"/></a></li>
+			<li class="sp_box_1_of_3"><img src="../images/index/img_bnr_17025.png" alt="" class="ilac"/></li>
+			<li class="sp_box_1_of_3"><img src="../images/index/img_bnr_psq.png" alt=""  class="PSQ"/></li>
+		</ul>
+	</div>
+	<!-- / footer_top_bnr2 End -->	
+	
+	<!-- footer wrap -->
+	<div id="footer_wrap">
+    	<div id="footer" class="clearfix">
+			<div id="access_wrap">
+				<div id="access">
+				<p class="f_logo"><a href="../"><img src="../images/common/logo.png" /></a></p>
+				<p class="f_add">日本ナレッジ株式会社<br />
+					東京都台東区寿3-19-5 JSビル9階<br />TEL.03-3845-4781</p>
+				</div>
+			</div>
+			
+        <div id="fnav" class="flex_between">
+			<ul class="fnav_service">
+				<li class="flex_between"><span class="fnav_head_bar"><a href="https://www.know-net.co.jp/service/">サービス</a></span>
+					<ul class="box_1_of_2 mt10">
+						<li class="fnav_head_service">【検証事業】</li>
+						<li class="page"><a href="https://www.know-net.co.jp/test-onsite/">オンサイト検証</a></li>
+						<li class="page"><a href="https://www.know-net.co.jp/test-offisite/">オフサイト検証</a></li>
+					</ul>
+					<ul class="box_1_of_2 mt10">
+						<li class="fnav_head_service">【ソフトウェア開発】</li>
+							<li class="page"><a href="https://www.know-net.co.jp/service/#dev_erp">業種特化ERP</a></li>
+							<li class="page"><a href="https://www.know-net.co.jp/service/#dev_sec">セキュリティ<br>
+						    ソリューション</a></li>
+							<!-- <li class="page"><a href="https://www.know-net.co.jp/service/#dev_other">OTHER</a></li> -->
+					</ul>
+				
+				</li>
+			</ul>
+			
+			<ul class="fnav_case">
+				<li class="flex_between"><span class="fnav_head_bar"><a href="https://www.know-net.co.jp/site/case/">事例</a></span>
+						<li class="fnav_head_service mt10"><a href="https://www.know-net.co.jp/case/#test">【検証・テスト事業】</a></li>
+						<li class="fnav_head_service mt10"><a href="https://www.know-net.co.jp/case/#dev">【ソフトウェア開発】</a></li>
+					</ul>
+				
+				</li>
+			</ul>			
+			<div class="fnav_others float_r">
+				<ul>
+				<li class="fnav_head"><a href="https://www.know-net.co.jp/company/">会社概要</a></li>
+				<li class="fnav_head"><a href="https://www.know-net.co.jp/concept/">企業コンセプト</a></li>
+				<li class="fnav_head"><a href="https://www.know-net.co.jp/outline/">会社沿革</a></li>
+				<li class="fnav_head"><a href="https://www.know-net.co.jp/recruit/">採用情報</a></li>
+				<li class="fnav_head"><a href="https://www.know-net.co.jp/recruit/#senior">先輩からのメッセージ</a></li>
+				<li class="fnav_head"><a href="https://www.know-net.co.jp/contact/">お問い合わせ</a></li>
+				<li class="fnav_head"><a href="https://www.know-net.co.jp/dispatching-act/">労働者派遣法に基づく情報公開</a></li>	
+				</ul>
+							<ul class="sns">
+                <li><a href="https://www.facebook.com/NihonKnowledge" target="_blank"><img src="../images/common/f_fb.png"></a></li>
+				<li><a href="https://twitter.com/KNOWNET2" target="_blank"><img src="../images/common/f_twitter.png"></a>
+				</li>
+            </ul>
+			</div>
+
+				
+			
+			
+			
+            <ul class="sp">
+                <li class="sp"><a href="./">ホーム</a></li>
+				<li class="sp"><a href="https://www.know-net.co.jp/service/">サービス</a></li>
+				<li class="sp"><a href="https://www.know-net.co.jp/case/">事例</a></li>
+				<li class="sp"><a href="https://www.know-net.co.jp/recruit/">採用情報</a></li>
+				<li class="sp"><a href="https://www.know-net.co.jp/concept/">会社概要</a></li> 
+				<li class="sp"><a href="https://www.know-net.co.jp/privacy-policy/">個人情報保護方針</a></li>
+				<li class="sp"><a href="https://www.know-net.co.jp/privacy-announce/">個人情報保護に関する公表事項</a></li>
+				<li class="sp"><a href="https://www.know-net.co.jp/dispatching-act/">労働者派遣法に基づく情報公開</a></li>
+            </ul>
+			
+        </div> 
+		</div>
+	
+	</div>
+	<!-- // footer wrap END -->	
+		
+		<div id="copyright">
+          <div class="inner clearfix">
+			  <p><span>Copyright </span>&copy; Nihon Knowledge Co.Ltd.<span> All rights reserved.</span></p>
+            <ul>
+              <li><a href="https://www.know-net.co.jp/privacy-policy/">個人情報保護方針</a></li>
+				<li><a href="https://www.know-net.co.jp/privacy-announce/">個人情報保護に関する公表事項</a></li>
+				<li><a href="https://www.know-net.co.jp/security-policy/">情報セキュリティに関する方針</a></li>
+              </ul>
+          </div>
+        </div>
+
+<!-- pagetop -->
+<p id="page-top"><a href="#pTop">↑</a></p>
+<!-- / pagetop END -->
+		
+		
+	</div>
+		
+</body>
+</html>

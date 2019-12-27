@@ -1,4 +1,5 @@
 var opening = document.getElementById("opening");
+var maincontainer = document.getElementById('maincontainer');
 var p_1 = document.getElementById("p_1");
 var p_2 = document.getElementById("p_2");
 var p_3 = document.getElementById("p_3");
@@ -85,6 +86,7 @@ reset_btn.onclick = function() {
   team_B = 0;
   disp_countA.value = team_A;
   disp_countB.value = team_B;
+  fullscreen();
 };
 
 // 人数ボタンのマウスダウン処理
@@ -107,4 +109,24 @@ p_2.onmouseup = function() {
 };
 p_3.onmouseup = function() {
   p_3.style.backgroundColor = "#093";
+};
+
+// 全画面表示
+function fullscreen() {
+  if (document.fullscreenEnabled) {
+    maincontainer.requestFullscreen();
+  }
+  else if (document.webkitFullscreenEnabled) {
+    maincontainer.webkitRequestFullscreen();
+  }
+  else if (document.mozFullScreenEnabled) {
+    maincontainer.mozRequestFullScreen();
+  }
+  else if (document.msFullscreenEnabled) {
+    maincontainer.msRequestFullscreen();
+  }
+  else {
+    alert('全画面表示できません。');
+    console.log('error!');
+  }
 };

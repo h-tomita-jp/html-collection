@@ -14,26 +14,27 @@
       <img src="opening.png" />
     </div>
   </div>
-
-  <div class="reset_box">
-    <input type="button" value="X" id="btn_reset" />
+  
+  <div id="maincontainer">
+    <div class="reset_box">
+      <input type="button" value="X" id="btn_reset" />
+    </div>
+  
+    <div class="counter_container">
+      <input type="button" value="0" id="disp_countA" class="counter" style="background-color: red;" />
+      <input type="button" value="0" id="disp_countB" class="counter" style="background-color: yellow;" />
+    </div>
+  
+    <div class="showteam_container" id="disp_team_container" >
+      <div id="disp_team" class="showteam">-</div>
+    </div>
+  
+    <div class="person_container">
+      <input type="button" value="1" id="p_1" class="person" />
+      <input type="button" value="2" id="p_2" class="person" />
+      <input type="button" value="3" id="p_3" class="person" />
+    </div>
   </div>
-
-  <div class="counter_container">
-    <input type="button" value="0" id="disp_countA" class="counter" style="background-color: red;" />
-    <input type="button" value="0" id="disp_countB" class="counter" style="background-color: yellow;" />
-  </div>
-
-  <div class="showteam_container" id="disp_team_container" >
-    <div id="disp_team" class="showteam">-</div>
-  </div>
-
-  <div class="person_container">
-    <input type="button" value="1" id="p_1" class="person" />
-    <input type="button" value="2" id="p_2" class="person" />
-    <input type="button" value="3" id="p_3" class="person" />
-  </div>
-
 
   <audio id="openingSE" preload="auto" autoplay>
     <source src="sound/opening.mp3" type="audio/mp3">
