@@ -79,6 +79,10 @@ input {
   }
 }
 
+#maincontainer{
+  background-color: #165506;
+}
+
 .reset_box {
   margin: 0.5em auto;
   width: 95%;
