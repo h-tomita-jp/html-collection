@@ -1,0 +1,69 @@
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>JavaScript ローン返済計算</title>
+
+</head>
+
+<body>
+
+  <h1>住宅ローンシミュレーション</h1>
+  <p>必要事項をご入力して「計算する」ボタンを押してください。</p>
+
+  <hr>
+
+  <form method="post" target="_top" name="loan">
+    <table>
+      <tr>
+        <td>借入金額：<input name="loanAmount" id="loanAmount" value="4000" size="10" min="1">万円</td>
+      </tr>
+      <tr>
+        <td>金利：<input type="number" name="interestRate" id="interestRate" value="0.625" size="10" min="0.01">%</td>
+      </tr>
+      <tr>
+        <td>頭金：<input type="number" name="downPaymant" id="downPaymant" value="1000" size="10" min="1">万円</td>
+      </tr>
+      <tr>
+        <td>ボーナス払い：<input type="number" name="bonusPaymant" id="bonusPaymant" value="10" size="10" min="1">万円/年2回</td>
+      </tr>
+      <tr>
+        <td>返済期間：<input type="number" name="period" id="period" value="10" size="10" min="1" max="50">年</td>
+      </tr>
+    </table>
+    <div style="text-align:center; margin-top:20px;"><button type="button" class="square_btn" onclick="loanSim();">計算する</button></div>
+  </form>
+
+  <hr>
+
+  <p>月々の返済額<span id="result"> </span>円</p>
+  <p>ご参考：ボーナス返済額(元金)<span id="bonusResult"> </span>円</p>
+  <hr>
+  <p>※住宅ローンのご返済シミュレーションツールです。</p>
+
+  <script language="JavaScript">
+    function loanSim() {
+      var loanAmount = parseFloat(document.loan.loanAmount.value) * 10000;
+      var downPaymant = parseFloat(document.loan.downPaymant.value) * 10000;
+      var bonusPaymant = parseFloat(document.loan.bonusPaymant.value) * 10000;
+      var interestRate = parseFloat(document.loan.interestRate.value);
+      var period = parseFloat(document.loan.period.value) * 12;
+
+      var bomusTimes = parseFloat(document.loan.period.value) * 2;
+      var rate_b = interestRate / 100 / 2;
+      var bonusAmount = Math.round(bonusPaymant * (Math.pow((1 + rate_b), bomusTimes) - 1) / (rate_b * Math.pow((1 + rate_b), bomusTimes)));
+      var bonusResult = document.getElementById('bonusResult')
+      bonusResult.innerHTML = bonusAmount.toLocaleString();
+
+      var payAmount = loanAmount - downPaymant - bonusAmount;
+      var rate_m = interestRate / 100 / 12;
+      var result = document.getElementById('result')
+      result.innerHTML = Math.floor((payAmount * rate_m * (Math.pow(1 + rate_m, period))) / (Math.pow(1 + rate_m, period) - 1)).toLocaleString();
+    }
+  </script>
+
+</body>
+
+</html>
