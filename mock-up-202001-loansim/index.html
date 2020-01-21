@@ -18,19 +18,19 @@
   <form method="post" target="_top" name="loan">
     <table>
       <tr>
-        <td>借入金額：<input name="loanAmount" id="loanAmount" value="4000" size="10" min="1">万円</td>
+        <td>借入金額：<input name="loanAmount" id="loanAmount" value="0" size="10" min="1">万円</td>
       </tr>
       <tr>
-        <td>金利：<input type="number" name="interestRate" id="interestRate" value="0.625" size="10" min="0.01">%</td>
+        <td>金利：<input type="number" name="interestRate" id="interestRate" value="0.0" size="10" min="0.01">%</td>
       </tr>
       <tr>
-        <td>頭金：<input type="number" name="downPaymant" id="downPaymant" value="1000" size="10" min="1">万円</td>
+        <td>頭金：<input type="number" name="downPaymant" id="downPaymant" value="0" size="10" min="1">万円</td>
       </tr>
       <tr>
-        <td>ボーナス払い：<input type="number" name="bonusPaymant" id="bonusPaymant" value="10" size="10" min="1">万円/年2回</td>
+        <td>ボーナス払い：<input type="number" name="bonusPaymant" id="bonusPaymant" value="0" size="10" min="1">万円/年2回</td>
       </tr>
       <tr>
-        <td>返済期間：<input type="number" name="period" id="period" value="10" size="10" min="1" max="50">年</td>
+        <td>返済期間：<input type="number" name="period" id="period" value="0" size="10" min="1" max="50">年</td>
       </tr>
     </table>
     <div style="text-align:center; margin-top:20px;"><button type="button" class="square_btn" onclick="loanSim();">計算する</button></div>
