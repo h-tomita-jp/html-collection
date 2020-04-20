@@ -1,0 +1,47 @@
+#contents {
+    position: relative;
+    width: 700px;
+    min-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#opNabe {
+    position: absolute;
+    left: 10%;
+}
+
+#star {
+    position: absolute;
+    left: 10%;
+    opacity: 0;
+}
+
+.poyon {
+  animation: poyon 1.5s linear 0s 1;
+}
+
+@keyframes poyon {
+  0%   { transform: translate(0%, -100%); }
+  10%  { transform: translate(0%, -15%); }
+  20%  { transform: translate(0%, 30%); }
+  30%  { transform: translate(0%, -10%); }
+  40%  { transform: translate(0%, -30%); }
+  50%  { transform: translate(0%, -10%); }
+  60%  { transform: translate(0%, 5%); }
+  70%  { transform: translate(0%, 0%); }
+  100% { transform: translate(0%, 0%); }
+}
+
+.pyuu {
+  animation: pyuu 0.8s linear 0s 1 forwards;
+  animation-delay: 1.0s;
+}
+
+@keyframes pyuu {
+  0%   { opacity: 0; transform: translate(100%, -10%); }
+  25%   { opacity: 1; transform: translate(75%, -20%); }
+  50%   { opacity: 1; transform: translate(50%, -10%); }
+  100% { opacity: 1; transform: translate(0%, 0%); }
+}
+
