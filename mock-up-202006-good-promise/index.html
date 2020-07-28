@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>
+店舗情報 | 旬菜創作ビュッフェ　露菴</title>
+<meta name="keywords" content="手作り,食べ放題,バイキング,ヴァイキング,ビュッフェ,しゃぶしゃぶ,ランチ,団体," />
+<meta name="description" content="旬の野菜を中心とした新鮮な食材をバイキングスタイルでご提供する、和風創作料理の店です。" />
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=0.5,user-scalable=yes,initial-scale=1.0" />
+<link rel="shortcut icon" href="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/img/favicon.ico" />
+<link rel="apple-touch-icon" href="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/img/gp_clip.png" />
+<link href="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/css/style.css" rel="stylesheet" type="text/css">
+<link href="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/css/common.css" rel="stylesheet" type="text/css">
+<link href="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/css/top.css" rel="stylesheet" type="text/css">
+<link href="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/css/sns.css" rel="stylesheet" type="text/css">
+<link href="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+    <script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sorts Mill Goudy">
+<script src="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/js/jquery-1.11.3.min.js"></script>
+<script src="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/js/functions.js"></script>
+<script src="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/js/footerFixed.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="https://zipaddr.com/js/zipaddrc.js" charset="UTF-8"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script>
+		(function($) {
+			$(function() {
+				var $header = $('#top-head');
+
+				// スクロール固定
+				$(window).scroll(function() {
+					if ($(window).scrollTop() > 300) {
+						$header.addClass('fixed');
+					} else {
+						$header.removeClass('fixed');
+					}
+				});
+
+				// ハンバーガー
+				$('#nav-toggle').click(function(){
+					$header.toggleClass('open');
+				});
+
+			});
+		})(jQuery);
+	</script>
+<script>
+jQuery(function() {
+	var topBtn = jQuery('#page-top');	
+	topBtn.hide();
+	jQuery(window).scroll(function () {
+		if (jQuery(this).scrollTop() > 100) {
+			topBtn.fadeIn();
+		} else {
+			topBtn.fadeOut();
+		}
+	});
+	//スクロールしてトップ
+    topBtn.click(function () {
+		jQuery('body,html').animate({
+			scrollTop: 0
+		}, 500);
+		return false;
+    });
+});
+</script>
+
+<!-- WP SiteManager OGP Tags -->
+<meta property="og:title" content="店舗情報" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.good-promise.co.jp/roan/shoplist/" />
+<meta property="og:site_name" content="旬菜創作ビュッフェ　露菴" />
+
+<!-- WP SiteManager Twitter Cards Tags -->
+<meta name="twitter:title" content="店舗情報" />
+<meta name="twitter:url" content="https://www.good-promise.co.jp/roan/shoplist/" />
+<meta name="twitter:card" content="summary" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"https:\/\/www.good-promise.co.jp\/roan\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4.23"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;return g&&g.fillText?(g.textBaseline="top",g.font="600 32px Arial","flag"===a?(g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3):"diversity"===a?(g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e):("simple"===a?g.fillText(h(55357,56835),0,0):g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='https://api.w.org/' href='https://www.good-promise.co.jp/roan/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.good-promise.co.jp/roan/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.good-promise.co.jp/roan/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.4.23" />
+<link rel='shortlink' href='https://www.good-promise.co.jp/roan/?p=8' />
+<link rel="alternate" type="application/json+oembed" href="https://www.good-promise.co.jp/roan/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.good-promise.co.jp%2Froan%2Fshoplist%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.good-promise.co.jp/roan/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.good-promise.co.jp%2Froan%2Fshoplist%2F&#038;format=xml" />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-83393602-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<link rel="canonical" href="https://www.good-promise.co.jp/roan/shoplist/" />
+</head>
+<body>
+<header id="top-head">
+  <div class="inner">
+    <div id="mobile-head">
+      <h1 class="logo"><a href="https://www.good-promise.co.jp/roan"><img src="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/img/logo_roan.png" alt="旬菜創作ビュッフェ露菴"></a></h1>
+      <div id="nav-toggle">
+        <p>MENU</p>
+        <div><!-- ハンバーガー --> 
+          <span></span> <span></span> <span></span> </div>
+        <!-- ハンバーガー --> 
+      </div>
+    </div>
+    <nav id="global-nav">
+      <ul>
+        <li><a href="https://www.good-promise.co.jp/roan/concept/">露菴のこだわり</a></li>
+        <li><a href="https://www.good-promise.co.jp/roan/info">お知らせ</a></li>
+        <li><a href="https://www.good-promise.co.jp/roan/menu">メニュー</a></li>
+        <li><a href="https://www.good-promise.co.jp/roan/shoplist">店舗情報</a></li>
+        <li><a href="https://good-promise-job.jp/" target="_blank">スタッフ募集</a></li>
+      </ul>
+    </nav>
+  </div>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+</header>
+
+<body class="home" id="home">
+<style>
+#shop_list dd {
+    padding-left: 5%;
+}
+
+#shop_list dt {
+    float: none;
+    width: 50%;
+}
+
+</style>
+<div id="contents">
+  <div id="mainimg">
+    <h1 id="mi"> <img src="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/img/eye/shop.jpg" alt="" id="mi_pc" /> <img src="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/img/eye/sp_shop.jpg" alt="" id="mi_sp" /> </h1>
+  </div>
+  <div id="inner_box">
+    <div id="page_title">
+      <h2>店舗情報</h2>
+      <p>露菴は西日本を中心に展開しております。<br>
+        詳細については各店舗ページをご覧ください。</p>
+    </div>
+    <section>
+      <h2 class="section_title">店舗一覧</h2>
+      <div class="clearfix">
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/%e6%b5%9c%e6%9d%be%e5%ba%97%e3%80%80%e3%80%802018%e5%b9%b43%e6%9c%881%e6%97%a5%e6%9c%a8am11%ef%bc%9a00%e3%82%b0%e3%83%a9%e3%83%b3%e3%83%89%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%ef%bc%81%ef%bc%81/">
+              浜松店  　Hamamatsu</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/%e6%b5%9c%e6%9d%be%e5%ba%97%e3%80%80%e3%80%802018%e5%b9%b43%e6%9c%881%e6%97%a5%e6%9c%a8am11%ef%bc%9a00%e3%82%b0%e3%83%a9%e3%83%b3%e3%83%89%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%ef%bc%81%ef%bc%81/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  静岡県浜松市浜北区平口330                </li>
+                <li><a href="tel:0535445666"><i class="fa fa-phone"></i>&nbsp;
+                  053-544-5666                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=19068" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/toyokawa/">
+              豊川店 　 Toyokawa</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/toyokawa/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  愛知県豊川市中条町中道31-1                </li>
+                <li><a href="tel:0533853353"><i class="fa fa-phone"></i>&nbsp;
+                  0533-85-3353                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=19067" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/kuwana/">
+              桑名店　Kuwana</a></dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                   <span><a href="https://www.good-promise.co.jp/roan/shop/kuwana/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  三重県桑名市五反田1823-1                </li>
+                <li><a href="tel:0594317881"><i class="fa fa-phone"></i>&nbsp;
+                  0594-31-7881                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=19066" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/chiryu/">
+              知立店　 Chiryu</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/chiryu/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  愛知県知立市上重原町丸山200番地                </li>
+                <li><a href="tel:0566843707"><i class="fa fa-phone"></i>&nbsp;
+                  0566-84-3707                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=19064" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/kyotoyahata/">
+              京都八幡店　Kyoto</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/kyotoyahata/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  京都府八幡市戸津中代36-1                </li>
+                <li><a href="tel:0752764502"><i class="fa fa-phone"></i>&nbsp;
+                  075-276-4502                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=19063" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/narakoryou/">
+              奈良広陵店　  Nara</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/narakoryou/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  奈良県北葛城郡広陵町寺戸279-1                </li>
+                <li><a href="tel:0745582288"><i class="fa fa-phone"></i>&nbsp;
+                  0745-58-2288                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/reserve_vacants/vacant/e014039501/19062/0526?cltid=e014039501&shop=19062" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/okayamakoshinden/">
+              岡山古新田店　 Okayama</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/okayamakoshinden/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  岡山県岡山市南区古新田1391-1                </li>
+                <li><a href="tel:0862816580"><i class="fa fa-phone"></i>&nbsp;
+                  086-281-6580                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/reserve_vacants/vacant/e014039501/19065/0523?cltid=e014039501&shop=19065" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/shinkurashiki/">
+              新倉敷店 　Kurashiki</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/shinkurashiki/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  岡山県倉敷市玉島爪崎981-1（山陽マルナカ新倉敷店敷地内）                </li>
+                <li><a href="tel:0865235565"><i class="fa fa-phone"></i>&nbsp;
+                  086-523-5565                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/vacant/e014039501/19061/0523?cltid=e014039501&shop=19061&show=3" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/fukuyamamatsunaga/">
+              福山松永店　 Matsunaga</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/fukuyamamatsunaga/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  広島県福山市高西町2-1-25                </li>
+                <li><a href="tel:0849335186"><i class="fa fa-phone"></i>&nbsp;
+                  084-933-5186                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=17788" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/higashihiroshima/">
+              東広島店　Higashi Hiroshima</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/higashihiroshima/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  広島県東広島市黒瀬町宗近柳国993-2                </li>
+                <li><a href="tel:0823832941"><i class="fa fa-phone"></i>&nbsp;
+                  0823-83-2941                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=18932" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/hatsukaichi/">
+              廿日市店　 Hatsuka Ichi</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/hatsukaichi/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  広島県廿日市市平良2丁目1-28                </li>
+                <li><a href="tel:0829342088"><i class="fa fa-phone"></i>&nbsp;
+                  0829-34-2088                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=17787" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/munakata/">
+              宗像店　Munakata</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/munakata/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  福岡県宗像市王丸字徳丸789-4                </li>
+                <li><a href="tel:0940383868"><i class="fa fa-phone"></i>&nbsp;
+                  0940-38-3868                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=18933" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/nagasaki/">
+              長崎店　Nagasaki</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/nagasaki/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  長崎県長崎市元船町10-1 夢彩都4F                </li>
+                <li><a href="tel:0958322010"><i class="fa fa-phone"></i>&nbsp;
+                  095-832-2010                  </a></li>
+                  <li class="hot">
+                  <a href="https://rsv.ebica.jp/ebica2/webrsv/rsv_vacants/?cltid=e014039501&shop=18934" target="_blank"><i class="fa fa-caret-right"></i> web予約はこちら(Reservation)</a>
+          </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/higashikori/">
+              FC東香里店　6月1日より営業を再開いたします。</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/higashikori/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  大阪府枚方市高田1丁目22-5                </li>
+                <li><a href="tel:0728600606"><i class="fa fa-phone"></i>&nbsp;
+                  072-860-0606                  </a></li>
+                  <li class="hot">
+        </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                <div id="shop_list">
+          <dl>
+            <dt class="mincyo"><a href="https://www.good-promise.co.jp/roan/shop/otori/">
+              FC堺おおとり店</a> </dt>
+            <dd>
+              <ul class="clearfix">
+                <li>
+                  <span><a href="https://www.good-promise.co.jp/roan/shop/otori/" class="shop_btn"><i class="fa fa-caret-right"></i>&nbsp;店舗詳細</a></span>
+                </li>
+                <li>
+                  大阪府堺市西区鳳西町1-87-2                </li>
+                <li><a href="tel:0722604419"><i class="fa fa-phone"></i>&nbsp;
+                  072-260-4419                  </a></li>
+                  <li class="hot">
+        </li>
+              </ul>
+            </dd>
+          </dl>
+        </div>
+                      </div>
+    </section>
+  </div>
+  <!-- innner-box --> 
+</div>
+<!-- contants -->
+
+<!-- footer -->
+<footer id="footer">
+ 	<div id="Insta">
+		<div id="Insta-inner">
+		<img src="https://www.good-promise.co.jp/roan/wp-content/themes/roan_2016/img/instaword.png" alt="インスタグラム">
+		<h2>Instagram</h2>
+		<p>hashtag”#露菴”on Instagram</p>
+		<!-- <div id="pc-see">
+		<script src="https://instawidget.net/js/instawidget.js?u=d57294ee85527dc1929c9903d6efc1e8cf1da9939d1dc1debc7bf2eb98075823&width=950px"></script>
+		</div>
+		<div id="sp-see">
+		<script src="https://instawidget.net/js/instawidget.js?u=940e294a9fccf36992e5d01495252745cd36bce80c889af8c9a598b464bdceca&width=300px"></script>
+		</div> -->
+		</div>
+  	</div>
+  <div id="page-top">
+    <p class="gotop"><a href="#top"><i class="fa fa-chevron-up"></i></a></p>
+  </div>
+  <div id="copyrigt">
+    <div id="copyrigt-inner">
+    <a href="http://www.good-promise.co.jp/">&copy; 2020 GOOD PROMISE INC.</a></div>
+  </div>
+</footer>
+
+<!--Yahoo!タグマネージャー-->
+<script id="tagjs" type="text/javascript">
+  (function () {
+    var tagjs = document.createElement("script");
+    var s = document.getElementsByTagName("script")[0];
+    tagjs.async = true;
+    tagjs.src = "//s.yjtag.jp/tag.js#site=3GUkm9K";
+    s.parentNode.insertBefore(tagjs, s);
+  }());
+</script>
+<noscript>
+  <iframe src="//b.yjtag.jp/iframe?c=3GUkm9K" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</noscript>
+
+</body></html>
