@@ -944,6 +944,22 @@ margin-top: -100px;
 	    background: none;
 	}
 
+	#flow .inner dl {
+	    background: none;
+	    padding-right: 0;
+	    width: 100%;
+	    text-align: center;
+	}
+
+	#flow .inner dl dd {
+	    height: auto;
+	    text-align: left;
+	}
+	
+	#flow .inner dl:not(:last-child):after {
+	    content: url(../images/common/common_flow_arrow_down.png);
+ 	}
+
 	#price ul {
 	    width: 90%;
 	}
